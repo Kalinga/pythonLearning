@@ -4,7 +4,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 
 # Google's Python Class
-# http://code.google.com/edu/languages/google-python-class/
+# https://developers.google.com/edu/python/
 
 """Wordcount exercise
 Google's Python class

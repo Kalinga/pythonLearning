@@ -4,7 +4,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 
 # Google's Python Class
-# http://code.google.com/edu/languages/google-python-class/
+# https://developers.google.com/edu/python/
 
 """A tiny Python program to check that Python is working.
 Try running this program from the command line like this:
