@@ -14,7 +14,15 @@
 # modify the passed in list.
 def remove_adjacent(nums):
   # +++your code here+++
-  return
+  redundantList = []
+  for index in range(len(nums) - 1):
+    if nums[index] == nums[index + 1]:
+      redundantList.append(nums[index])
+
+  for elem in redundantList:
+    nums.remove(elem)
+
+  return nums
 
 
 # E. Given two lists sorted in increasing order, create and return a merged
@@ -23,7 +31,29 @@ def remove_adjacent(nums):
 # pass of both lists.
 def linear_merge(list1, list2):
   # +++your code here+++
-  return
+  result = []
+  index1 = 0
+  index2 = 0
+
+  for index in range(len(list1) + len(list2)):
+    if index1 == len(list1):
+      for num in range (index2, len(list2)):
+        result.append(list2[num])
+    if index2 == len(list2):
+      for num in range (index1, len(list1)):
+        result.append(list1[num])
+
+    if len(result) == len(list1)  + len(list2):
+      break
+
+    if list1[index1] > list2[index2]:
+      result.append( list2[index2])
+      index2 += 1
+    else:  
+      result.append( list1[index1])
+      index1 += 1
+
+  return result
 
 # Note: the solution above is kind of cute, but unforunately list.pop(0)
 # is not constant time with the standard python list implementation, so
@@ -47,7 +77,7 @@ def test(got, expected):
 # Calls the above functions with interesting inputs.
 def main():
   print 'remove_adjacent'
-  test(remove_adjacent([1, 2, 2, 3]), [1, 2, 3])
+  test(remove_adjacent([1, 2, 2, 2, 2, 2, 3]), [1, 2, 3])
   test(remove_adjacent([2, 2, 3, 3, 3]), [2, 3])
   test(remove_adjacent([]), [])
 
