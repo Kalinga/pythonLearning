@@ -7,22 +7,16 @@ import string
 
 def firstTaskLowercaseCount():
     print "Calling " + firstTaskLowercaseCount.__name__
-    lowCount = 0
+
     str = "Discover, Learning, with, Edureka"
-    for letter in str:
-        if letter.islower():
-            lowCount +=1
-    print lowCount
-    print "Number of small letters are there"
+    print "Number of 'a': %d, 'o': %d are there" % (str.count('a'), str.count('o'))
 
-
+#b. Number of uppercase 'L' and 'N' in the following sentence.
 def firstTaskUppercaseCount():
     print "\nCalling " + firstTaskUppercaseCount.__name__
-    uppCount = 0
-    for letter in "Discover, Learning, with, Edureka":
-        if letter.isupper():
-            uppCount =uppCount + 1
-    print "%s Number of Upper Case letters are there" %uppCount
+
+    str = "Discover, Learning, with, Edureka"
+    print "Number of 'L': %d, 'N': %d are there" % (str.count('L'), str.count('N'))
 
 
 #2. Write a program to remove the following from:
@@ -33,26 +27,12 @@ def firstTaskUppercaseCount():
 def secondTask_a():
     print "\nCalling " + secondTask_a.__name__
     str = "www.edureka.in"
-    newStr=''
-    index = str.find(".edureka.")
-    print index
-    for i in range(index):
-        #print i
-        if (str[i] != 'w'):
-            newStr = newStr + str[i]
 
-    print newStr
-    newStr = newStr + ".edureka."
-    for i in range(str.find(newStr) + len(newStr), len(str)):
-        #print i
-        if (str[i] != 'w'):
-            newStr = newStr + str[i]
-
-    str = newStr
-    print str
+    print str.strip('w')
 
 def secondTask_b():
     print "\nCalling " + secondTask_b.__name__
+    print "strip() works in removing from leading and trailing end not through out the text"
     str = "WWW.http.edureka.IN"
     newStr=''
     index = str.find(".edureka.")
