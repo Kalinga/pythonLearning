@@ -1,5 +1,6 @@
 __creator__='Kalinga'
 
+import string
 #1. Write a program to print the:
 #a. Number of lowercase 'a' and "o" in the following sentence.
 #Discover, Learning, with, Edureka
@@ -28,51 +29,106 @@ def firstTaskUppercaseCount():
 #www.edureka.in
 #a. Remove all w' s before and after .edureka.
 #b. Remove all lowercase letter before and after .edureka.
-#c. Remove all printable characters
+
 def secondTask_a():
     print "\nCalling " + secondTask_a.__name__
     str = "www.edureka.in"
+    newStr=''
     index = str.find(".edureka.")
+    print index
+    for i in range(index):
+        #print i
+        if (str[i] != 'w'):
+            newStr = newStr + str[i]
 
+    print newStr
+    newStr = newStr + ".edureka."
+    for i in range(str.find(newStr) + len(newStr), len(str)):
+        #print i
+        if (str[i] != 'w'):
+            newStr = newStr + str[i]
+
+    str = newStr
+    print str
 
 def secondTask_b():
-    pass
+    print "\nCalling " + secondTask_b.__name__
+    str = "WWW.http.edureka.IN"
+    newStr=''
+    index = str.find(".edureka.")
+    print index
+    for i in range(index):
+        #print i
+        if (not str[i].islower()):
+            newStr = newStr + str[i]
+
+    print newStr
+    newStr = newStr + ".edureka."
+    for i in range(str.find(newStr) + len(newStr), len(str)):
+        #print i
+        if (not str[i].islower()):
+            newStr = newStr + str[i]
+
+    str = newStr
+    print str
+
+#c. Remove all printable characters
 def secondTask_c():
-    pass
+    print "\nCalling " + secondTask_c.__name__
+    str = "www.edureka.in"
+    newStr = ''
+    for i in range(len(str)):
+        #print i
+        if (not str[i] in string.printable):
+            newStr = newStr + str[i]
+
+    str = newStr
+    print str
 
 #3. Identify the type of numbers:
+
 #a. 0X7AE
-#b. 3+4j
-#c. -01234
-#d. 3.14e-2
 def thirdTask_a():
-    pass
+    print (type(0X7AE))
+
+#b. 3+4j
 def thirdTask_b():
-    pass
+    print (type(3+4j))
+
+#c. -01234
 def thirdTask_c():
-    pass
+    print (type(-01234))
+
+#d. 3.14e-2
 def thirdTask_d():
-    pass
+    print (type(3.14e-2))
 
 #4. Write a program for String Formatting Operator % which should include the following conversions:
+
 #a. Character
-#b. Signed decimal integer
-#c. Octal integer
-#d. Hexadecimal integer (UPPERcase letters)
-#e. Floating point real number
-#f. Exponential notation (with lowercase 'e')
 def fourthTask_a():
-    pass
+    option = "Y"
+    print "\nInput option '%c' for Yes" %(option)
+
+#b. Signed decimal integer
 def fourthTask_b():
-    pass
+    print "Input integer '%i' with sign" % (-456)
+
+#c. Octal integer
 def fourthTask_c():
-    pass
+    print "Input number '%o' is Octal" % (0345)
+
+#d. Hexadecimal integer (UPPERcase letters)
 def fourthTask_d():
-    pass
+    print "Input number '%X' is HEX" % (0X12AF5)
+
+#e. Floating point real number
 def fourthTask_e():
-    pass
+    print "Input number '%f' is a Floating point Real number" % (234.34)
+
+#f. Exponential notation (with lowercase 'e')
 def fourthTask_f():
-    pass
+    print "Input number '%e' is a Floating point Real number" % (233454.34)
 
 if __name__ =='__main__':
 
