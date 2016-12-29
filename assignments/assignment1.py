@@ -1,6 +1,7 @@
 __creator__='Kalinga'
 
 import string
+import sys
 #1. Write a program to print the:
 #a. Number of lowercase 'a' and "o" in the following sentence.
 #Discover, Learning, with, Edureka
@@ -29,6 +30,7 @@ def secondTask_a():
     str = "www.edureka.in"
 
     print str.strip('w')
+    print sys.argv
 
 def secondTask_b():
     print "\nCalling " + secondTask_b.__name__
