@@ -1,7 +1,10 @@
 __creator__='Kalinga'
 
+from  project.styleformat import heading
+
 import string
 import sys
+
 #1. Write a program to print the:
 #a. Number of lowercase 'a' and "o" in the following sentence.
 #Discover, Learning, with, Edureka
@@ -18,7 +21,6 @@ def firstTaskUppercaseCount():
 
     str = "Discover, Learning, with, Edureka"
     print "Number of 'L': %d, 'N': %d are there" % (str.count('L'), str.count('N'))
-
 
 #2. Write a program to remove the following from:
 #www.edureka.in
@@ -67,6 +69,7 @@ def secondTask_c():
     str = newStr
     print str
 
+
 #3. Identify the type of numbers:
 
 #a. 0X7AE
@@ -114,17 +117,25 @@ def fourthTask_f():
 
 if __name__ =='__main__':
 
+    heading("Module 1 Assignments: 1")
+
     firstTaskLowercaseCount()
     firstTaskUppercaseCount()
+
+    heading("Module 1 Assignments: 2")
 
     secondTask_a()
     secondTask_b()
     secondTask_c()
-    
+
+    heading("Module 1 Assignments: 3")
+
     thirdTask_a()
     thirdTask_b()
     thirdTask_c()
     thirdTask_d()
+
+    heading("Module 1 Assignments: 4")
 
     fourthTask_a()
     fourthTask_b()

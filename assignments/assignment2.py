@@ -1,10 +1,6 @@
+from  project.styleformat import heading
 
 import string
-def heading(str):
-    print "~" * 80
-    offset = (80 - len(str)) / 2
-    print " " * offset + str
-    print "~" * 80
 
 heading("Module 2 Assignments: 1")
 
