@@ -1,7 +1,9 @@
 import os
 import urllib2
 import socket
-from pip.commands import unzip
+from zipfile import ZipFile
+
+import shutil
 
 print urllib2.getproxies()
 
@@ -29,3 +31,8 @@ else:
     with open("master.zip", "w") as zipFile:
         zipFile.write(contents)
 
+with ZipFile("master.zip") as zipFile:
+    zipFile.extractall("/tmp/")
+
+shutil.copy("/tmp/pythonLearning-master/README.md", os.getcwd())
+shutil.rmtree("/tmp/pythonLearning-master")
