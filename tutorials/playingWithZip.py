@@ -12,9 +12,13 @@ print  "Total items" + str(len(os.environ))
 for item in os.environ:
     print  item, os.environ[item]
 
-
+#isZipFile = False
+isZipFile = True
+zipLink = "https://github.com/Kalinga/pythonLearning/archive/master.zip"
+httpLink = "https://www.google.co.in/?gfe_rd=cr&ei=FoFvWPaYG-ft8AfCjIaQCg#q=faq+python+"
+link =  httpLink if not isZipFile else zipLink
 try:
-    url = urllib2.urlopen("https://github.com/Kalinga/pythonLearning/archive/master.zip")
+    url = urllib2.urlopen(link)
 except urllib2.URLError, urlErr:
     print("URLError")
     print str(urlErr)
@@ -28,11 +32,16 @@ except:
 else:
     print url.geturl()
     contents = url.read()
-    with open("master.zip", "w") as zipFile:
-        zipFile.write(contents)
+    if "<!doctype html>" in contents:
+        with open("response.html", "w") as htmlFile:
+            htmlFile.write(contents)
+    else:
+        with open("master.zip", "w") as zipFile:
+            zipFile.write(contents)
 
-with ZipFile("master.zip") as zipFile:
-    zipFile.extractall("/tmp/")
+if (isZipFile):
+    with ZipFile("master.zip") as zipFile:
+        zipFile.extractall("/tmp/")
 
 shutil.copy("/tmp/pythonLearning-master/README.md", os.getcwd())
 shutil.rmtree("/tmp/pythonLearning-master")
