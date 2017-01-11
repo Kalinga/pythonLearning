@@ -17,7 +17,11 @@ print os.uname()
 
 print os.environ
 
-tree = os.walk("/home/kalinga/")
+#path = "/home/kalinga/"
+#path = "/media/kalinga/5A9E6A779E6A4B97" #18 GB Volume
+path = "/media/kalinga/9260C0A960C0957F" #47 GB Volume Windows C
+
+tree = os.walk(path)
 print type(tree)
 
 directories = list()
@@ -45,7 +49,12 @@ xclude = ["xml", "gif",
           "py", "jar",
           "css", "properties",
           "json", "bat",
-          "png", "html" ]
+          "png", "html",
+          "htm", "manifest",
+          "cat", "dll",
+          "mui", "exe",
+          "nlp", "browser",
+          "desktop", "sys"]
 
 countList = list()
 files.sort()
