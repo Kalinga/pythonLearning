@@ -1,11 +1,12 @@
+import math
+from operator import itemgetter
 import random
-
-#from  project.styleformat import heading
-
+import string
+from  project.styleformat import heading
 import sys
 import string
 
-#heading("Module 3 Assignments: 1")
+heading("Module 3 Assignments: 1")
 
 def add(op1, op2):
     return  op1 + op2
@@ -41,19 +42,34 @@ def calc(op, op1, op2):
         print "Sorry! You were wrong this time!!"
 
 #Accept the input from User
-level = raw_input("Please Enter difficulty level 'Easy' | 'Med' | 'Diff'")
-if level not in ['Easy' , 'Med' , 'Diff']:
-    level = raw_input("Please Enter the level correctly: 'Easy' or 'Med' or 'Diff'")
-if level not in ['Easy' , 'Med' , 'Diff']:
+level = raw_input("Please Enter difficulty level 'Easy' | 'Med' | 'Diff':  \n")
+if level not in ['Easy', 'Med', 'Diff', 'easy', 'med', 'diff']:
+    level = raw_input("Please Enter the level correctly: 'Easy' or 'Med' or 'Diff':  \n")
+if level not in ['Easy', 'Med', 'Diff', 'easy', 'med', 'diff']:
+    print "Wrong Input Exiting now....Thank you!"
     sys.exit(1)
 
-questionCount = (int)(input("Please give us the number of question you want to attempt:"))
-type = raw_input("Specify the question type (multiplication:M, addition:A, subtraction:S, division:D)")
+questionCount = int(input("Please give us the number of question you want to attempt:  \n"))
+if not questionCount > 0:
+    questionCount = int(input( "Please re-enter the number of question you want to attempt" \
+          " (question count must be an integer greater than 0): \n"))
+if not questionCount > 0:
+    print "Wrong Input Exiting now....Thank you!"
+    sys.exit(1)
+
+type = raw_input("Specify the question type (multiplication:M, addition:A, subtraction:S, division:D):  \n")
+if type not in ('M', 'm', 'D', 'd', 'S', 's', 'A', 'a'):
+    print "You must key in one of this ('M', 'm', 'D', 'd', 'S', 's', 'A', 'a')"
+    print "Wrong Input Exiting now....Thank you!"
+    sys.exit(1)
+
 dict = {'D': 'divided', 'A': 'added', 'S': 'subtracted', 'M': 'multiplied',
         'd': 'divided', 'a': 'added', 's': 'subtracted', 'm': 'multiplied'}
 
 #Business Logic for iteration and invocation of calculation functions
 while questionCount > 0:
+    count = 0
+
     if level == 'Easy':
         op1 = random.choice(xrange(1,10))
         op2 = random.choice(xrange(1,5))
@@ -69,3 +85,43 @@ while questionCount > 0:
         calc(type, op1, op2)
 
     questionCount -=1
+    count += 1
+
+    if (count == 5):
+        option = raw_input("Do you want to quit now?(yes/no) \n")
+        if option.lower() == 'yes':
+            print "Exiting now....Thank you!"
+            exit(0)
+
+heading("Module 3 Assignments: 2")
+#Write a recursive function to compute x raised to the power of n.
+def power(x, y):
+    if x == 0:
+        return float('nan')
+    if y == 0:
+        return 1
+    else:
+        return x * power(x, y - 1)
+print power(0,0)
+print power(0,1)
+print power(1,0)
+print power(1,1)
+print power(1,10)
+print power(10,1)
+print power(2,10)
+
+heading("Module 3 Assignments: 3")
+def mysort():
+    mylist = [["john", 1, "a"], ["larry", 0, "b"]]
+    mylist.sort(cmp=lambda x,y: cmp(x[1], y[1]))
+    print  mylist
+
+mysort()
+
+heading("Module 3 Assignments: 3")
+def mysort_itemgetter():
+    mylist = [["john", 1, "a"], ["larry", 0, "b"]]
+    mylist = sorted(mylist, key=itemgetter(1))
+    print mylist
+
+mysort_itemgetter()
