@@ -7,19 +7,19 @@ import sys
 
 #1. Write a program to print the:
 #a. Number of lowercase 'a' and "o" in the following sentence.
-#Discover, Learning, with, Edureka
+#Discover, Learning, with, MySimpleClass
 
 def firstTaskLowercaseCount():
     print "Calling " + firstTaskLowercaseCount.__name__
 
-    str = "Discover, Learning, with, Edureka"
+    str = "Discover, Learning, with, TeachMe"
     print "Number of 'a': %d, 'o': %d are there" % (str.count('a'), str.count('o'))
 
 #b. Number of uppercase 'L' and 'N' in the following sentence.
 def firstTaskUppercaseCount():
     print "\nCalling " + firstTaskUppercaseCount.__name__
 
-    str = "Discover, Learning, with, Edureka"
+    str = "Discover, Learning, with, TeachMe"
     print "Number of 'L': %d, 'N': %d are there" % (str.count('L'), str.count('N'))
 
 #2. Write a program to remove the following from:
