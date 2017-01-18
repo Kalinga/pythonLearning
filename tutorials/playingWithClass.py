@@ -43,6 +43,22 @@ print OtherClass.__base__
 print OtherClass.__bases__
 
 class Student(object):
+    #. Class Variables
+    #. Static Methods
+    #. Class Methods
+    #. Ctor
+    #. Dtor
+    #. Instance Methods
+
+    @staticmethod
+    def print__init__OverloadingSignature():
+        styleformat.heading("Overloading signature of __init__(self, *args, **kwargs[])")
+
+    @classmethod
+    def classMethod(cls):
+        print "\n", "This is a class method"
+        print "cls: ", cls
+
     def __init__(self, name, age):
         styleformat.heading("class Student.__init__")
         print self
@@ -54,15 +70,6 @@ class Student(object):
 
     def instanceFunction(self):
         print "instanceFunction"
-
-    @staticmethod
-    def print__init__OverloadingSignature():
-        styleformat.heading("Overloading signature of __init__(self, *args, **kwargs[])")
-
-    @classmethod
-    def classMethod(cls):
-        print "\n", "This is a class method"
-        print "cls: ", cls
 
 student = Student(32, "Kalinga")
 print student

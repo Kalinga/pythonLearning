@@ -125,97 +125,104 @@ the following standard YYYY-MM-DD'''
     Named groups can be referenced in three contexts. If the pattern is (?P<quote>['"]).*?(?P=quote) (i.e. matching a
     string quoted with either single or double quotes):
     '''
-
-heading("Module 4 Assignment: 1")
-#mat = re.search(r"\d\d\d\d-([0-2][0-9]|[3][0-1])-([0|1][0-2])", "My date of birth is 1983-00-00")
-mat = re.search(r"\d\d\d\d-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])", "My date of birth is 1983-01-31")
-if mat:
-    print mat.group()
-
-heading("Module 4 Assignment: 2")
-#Write a Regular Expression that will match a traditional SSN
-'''
-A Social Security Number (SSN) consists of nine digits, commonly written as three fields separated by hyphens:
-AAA-GG-SSSS. The first three-digit field is called the "area number". The central, two-digit field is called the
-"group number". The final, four-digit field is called the "serial number". Area numbers of "000" have never been issued.
-Group codes of "00" aren't assigned Serial number "0000" is never used.
-'''
-
-mat = re.search(r"(\d\d[1-9]|[1-9]\d\d)-(\d[1-9]|[1-9]\d)-(\d\d\d[1-9]|[1-9]\d\d\d)", "My SSN is 001-03-3544")
-if mat:
-    print mat.group()
-
-heading("Module 4 Assignment: 3")
-#Write a Regular Expression that will match an IPv4 address.[0.0.0.0-255.255.255.255]
-#^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$
-# 55.225.0.255
-mat = re.search(r"(\b([01][0-9][0-9]|[2][0-5][0-5]|\d\d|[0-9])\.){3}([012][0-9][0-5]|\d\d|[0-9])\b",
-                "My IP is 192.168.1.1")
-if mat:
-    print mat.group()
-
-heading("Module 4 Assignment: 4")
 #Write a Regular Expression that will match an email address.
-mat = re.search(r"(\b([a-zA-Z]{1,25}[0-9a-zA-Z._-]{1,25}\@[a-z.-_]{1,25}\.[a-z]{2,3})\b)",
-                "My email is mail.kalinga@gmail.com")
-if mat:
-    print mat.group()
+pat = re.compile(r"(\b([a-zA-Z]{1,25}[0-9a-zA-Z._-]{1,25}\@[a-z.-_]{1,25}\.[a-z]{2,3})\b)")
+def reEmail(str):
+    mat = re.search(pat, str)
+    if mat:
+        return mat.group()
+    else:
+        return "None"
 
-heading("Module 4 Assignment: 5")
-# Below is the program to calculate the area of a box. Check how it
-# is working. Correct the program (if required).
-class Box:
-    def area(self):
-        return self.width * self.height
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
+if __name__ == "__main__":
+    heading("Module 4 Assignment: 1")
+    #mat = re.search(r"\d\d\d\d-([0-2][0-9]|[3][0-1])-([0|1][0-2])", "My date of birth is 1983-00-00")
+    mat = re.search(r"\d\d\d\d-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])", "My date of birth is 1983-01-31")
 
-# Create an instance of Box.
-x = Box(10, 2)
-# Print area.
-print "Area of the Box: ", x.area()
 
-heading("Module 4 Assignment: 6")
-# Write a program to calculate distance so that it takes two Points
-#(x1, y1) and (x2, y2) as arguments and displays the calculated
-#distance, using Class.
+    heading("Module 4 Assignment: 2")
+    #Write a Regular Expression that will match a traditional SSN
+    '''
+    A Social Security Number (SSN) consists of nine digits, commonly written as three fields separated by hyphens:
+    AAA-GG-SSSS. The first three-digit field is called the "area number". The central, two-digit field is called the
+    "group number". The final, four-digit field is called the "serial number". Area numbers of "000" have never been issued.
+    Group codes of "00" aren't assigned Serial number "0000" is never used.
+    '''
 
-class Point:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-    def distance(self, point):
-        if not (isinstance(point, Point)):
-            return -1
-        else:
-            dist = math.sqrt((self.x - point.x)**2 + (self.y - point.y)** 2)
-            return dist
+    mat = re.search(r"(\d\d[1-9]|[1-9]\d\d)-(\d[1-9]|[1-9]\d)-(\d\d\d[1-9]|[1-9]\d\d\d)", "My SSN is 001-03-3544")
+    print mat
 
-p1 = Point(12, 0)
-p2 = Point(17, 0)
-print "Distance between p1(12, 0) and p2(17, 0) is: ", p1.distance(p2)
-p1 = Point(3, 0)
-p2 = Point(0, 4)
-print "Distance between p1(3, 0) and p2(0, 4) is: ", p1.distance(p2)
+    heading("Module 4 Assignment: 3")
+    #Write a Regular Expression that will match an IPv4 address.[0.0.0.0-255.255.255.255]
+    #^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$
+    # 55.225.0.255
+    mat = re.search(r"(\b([01][0-9][0-9]|[2][0-5][0-5]|\d\d|[0-9])\.){3}([012][0-9][0-5]|\d\d|[0-9])\b",
+                    "My IP is 192.168.1.1")
+    if mat:
+        print mat.group()
 
-heading("Module 4 Assignment: 7")
-'''Correct the below program so that output should appear like
-this. [Expected output: x-value: 5 y-value: 7]'''
+    heading("Module 4 Assignment: 4")
 
-class Point:
-    def __init__(self, x=0, y=0):
-        self.x = x
-        self.y = y
+    mat = reEmail("My email is mail.kalinga@gmail.com")
+    if mat:
+        print mat.group()
+        print mat.groups()
 
-    def __str__(self):
-        return "[x-value: " + str(self.x) + " y-value: %s]"%str(self.y)
+    heading("Module 4 Assignment: 5")
+    # Below is the program to calculate the area of a box. Check how it
+    # is working. Correct the program (if required).
+    class Box:
+        def area(self):
+            return self.width * self.height
+        def __init__(self, width, height):
+            self.width = width
+            self.height = height
 
-    def __add__(self,other):
-        self.x = self.x+other.x
-        self.y = self.y+other.y
-        return self
+    # Create an instance of Box.
+    x = Box(10, 2)
+    # Print area.
+    print "Area of the Box: ", x.area()
 
-p1 = Point(3,4)
-p2 = Point(2,3)
-print (p1+p2)
+    heading("Module 4 Assignment: 6")
+    # Write a program to calculate distance so that it takes two Points
+    #(x1, y1) and (x2, y2) as arguments and displays the calculated
+    #distance, using Class.
+
+    class Point:
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+        def distance(self, point):
+            if not (isinstance(point, Point)):
+                return -1
+            else:
+                dist = math.sqrt((self.x - point.x)**2 + (self.y - point.y)** 2)
+                return dist
+
+    p1 = Point(12, 0)
+    p2 = Point(17, 0)
+    print "Distance between p1(12, 0) and p2(17, 0) is: ", p1.distance(p2)
+    p1 = Point(3, 0)
+    p2 = Point(0, 4)
+    print "Distance between p1(3, 0) and p2(0, 4) is: ", p1.distance(p2)
+
+    heading("Module 4 Assignment: 7")
+    '''Correct the below program so that output should appear like
+    this. [Expected output: x-value: 5 y-value: 7]'''
+
+    class Point:
+        def __init__(self, x=0, y=0):
+            self.x = x
+            self.y = y
+
+        def __str__(self):
+            return "[x-value: " + str(self.x) + " y-value: %s]"%str(self.y)
+
+        def __add__(self,other):
+            self.x = self.x+other.x
+            self.y = self.y+other.y
+            return self
+
+    p1 = Point(3,4)
+    p2 = Point(2,3)
+    print (p1+p2)
