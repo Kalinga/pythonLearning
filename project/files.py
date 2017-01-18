@@ -19,7 +19,8 @@ print os.environ
 
 #path = "/home/kalinga/"
 #path = "/media/kalinga/5A9E6A779E6A4B97" #18 GB Volume
-path = "/media/kalinga/9260C0A960C0957F" #47 GB Volume Windows C
+#path = "/media/kalinga/9260C0A960C0957F" #47 GB Volume Windows C
+path = "/media/kalinga/ca6f935d-a7c5-4276-af49-5b2e44cb2f0e" #34 GB Volume Ubuntu
 
 tree = os.walk(path)
 print type(tree)
@@ -45,16 +46,11 @@ print "Building of List is done \n"
 print "Dir count: " + str(len(directories))
 print "Files count: " + str(len(files))
 
-xclude = ["xml", "gif",
-          "py", "jar",
-          "css", "properties",
-          "json", "bat",
-          "png", "html",
-          "htm", "manifest",
-          "cat", "dll",
-          "mui", "exe",
-          "nlp", "browser",
-          "desktop", "sys"]
+xclude = ['JPG', 'RSA', 'SF', 'bat', 'bin', 'browser', 'c', 'cache', 'cat', 'class', 'cmd', 'conf', 'cpp', 'css',
+          'desktop', 'dll', 'exe', 'frag', 'gif', 'gitignore', 'h', 'htm', 'html', 'idl', 'jar', 'java', 'jpg',
+          'js', 'json', 'ko', 'manifest', 'mm', 'mm', 'mui', 'nlp', 'otf', 'pd', 'placeholder', 'plxarc', 'pm',
+          'png', 'pod', 'profile', 'properties', 'prs', 'py', 'so', 'svg', 'sys', 'tga', 'ttf', 'txt', 'vert',
+          'wav', 'xml', 'yml','gitattributes', 'metadata', 'options', 'pl']
 
 countList = list()
 files.sort()
@@ -73,3 +69,4 @@ for f in files:
                 pass
         else:
             print f
+print "Finished searching for duplicate files. Thank You!!"
