@@ -27,6 +27,8 @@ class RETest(unittest.TestCase):
     def test_dummy(self):
         self.assertTrue(True)
 
+# For invocation from terminal
+# python -m unittest reTest.RETest.test_Email1
 if (__name__ == "__main__"):
     print "Unit test started: "
     unittest.main()

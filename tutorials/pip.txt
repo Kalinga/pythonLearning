@@ -1,0 +1,2 @@
+pip freeze: list of all python module within the specific env
+python-nose: extend test loading and running
