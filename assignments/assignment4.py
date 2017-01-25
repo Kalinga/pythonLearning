@@ -1,11 +1,10 @@
 #!/usr/bin/python
 # coding=UTF-8
 
+import math
 import re
 
-import math
-
-from  project.styleformat import heading
+from  testmodule.styleformat import heading
 
 '''Write a Regular Expression that will match a date that follows
 the following standard YYYY-MM-DD'''

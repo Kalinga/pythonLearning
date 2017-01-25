@@ -1,6 +1,4 @@
-from  project.styleformat import heading
-
-import string
+from  testmodule.styleformat import heading
 
 heading("Module 2 Assignments: 1")
 total = int(input('\n What is the total amount for your online shopping?'))

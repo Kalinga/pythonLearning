@@ -1,6 +1,6 @@
 import math
 
-from project import styleformat
+from testmodule import styleformat
 
 
 class MyClass(object):

@@ -1,6 +1,6 @@
-from  project.styleformat import heading
-
 import string
+
+from  testmodule.styleformat import heading
 
 heading("Module 2 Assignments: 5")
 a = [4,7,3,2,5,9]

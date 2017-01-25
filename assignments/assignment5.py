@@ -1,10 +1,10 @@
 #!/usr/bin/python
 # coding=UTF-8
 
-import sqlite3
 import os
+import sqlite3
 
-from  project.styleformat import heading
+from  testmodule.styleformat import heading
 
 # Fetch the the version number of sqlite3
 heading("Module 5 Assignments: 1")
@@ -109,7 +109,6 @@ with con:
 
 
 heading("Module 5 Assignments: 8")
-import sys
 uId = 1
 uPrice = 62300
 con = sqlite3.connect('test.db')

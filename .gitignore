@@ -1,3 +1,11 @@
-.idea/
+*.xz
+*.html
+*.pdf
 *.pyc
 *.zip
+*.db
+.idea/
+build/
+*egg-info/
+dist/
+

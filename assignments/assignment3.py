@@ -1,10 +1,8 @@
-import math
-from operator import itemgetter
 import random
-import string
-from  project.styleformat import heading
 import sys
-import string
+from operator import itemgetter
+
+from  testmodule.styleformat import heading
 
 heading("Module 3 Assignments: 1")
 

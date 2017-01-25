@@ -1,9 +1,9 @@
 __creator__='Kalinga'
 
-from  project.styleformat import heading
-
 import string
 import sys
+
+from  testmodule.styleformat import heading
 
 #1. Write a program to print the:
 #a. Number of lowercase 'a' and "o" in the following sentence.
