@@ -2,30 +2,32 @@ import os
 import pdfkit
 
 kalinga = 'KALINGA_RAY_2017'
-html_file = "../my-pdf/" + kalinga + '.html'
-pdf_file = "../my-pdf/" + kalinga + '.pdf'
+html_file = "../gen/" + kalinga + '.html'
+pdf_file = "../gen/" + kalinga + '.pdf'
 
+if not os.path.exists("../gen"):
+    os.mkdir("../gen")
 
 def skeleton():
     return \
         '''
         <!DOCTYPE html>
         <html>
-        <head>
-        <title>Page Title</title>
-        </head>
-        <body>
+            <head>
+            <title>Kalinga Bhusan Ray</title>
+            </head>
 
-        <h1>This is a Heading</h1>
-        <p title="I'm a tooltip">
-            This is a paragraph with tooltip.
-        </p>
+            <body>
+            <h1>Kalinga Bhusan Ray</h1>
+            <p title="I'm a tooltip">
+                This is a paragraph with tooltip.
+            </p>
 
-        </body>
+            </body>
         </html>
         '''
 
-with open(html_file,'w') as f:
+with open(html_file,'w+') as f:
     message = skeleton()
 
     f.write(message)
