@@ -43,7 +43,7 @@ def pageheading():
         '''
         <body>
             <div id="Container">
-                <article>
+                <article class="Container_article">
                     <h1>Kalinga Bhusan Ray</h1>
                     <address>
                         +91-7795346374<br>
@@ -54,8 +54,8 @@ def pageheading():
                         <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a><br>
                     </address>
                 </article>
-                <article id="rightMostImage">
-                    <img src="../src/myimage1.jpg" alt="Kalinga's photo">
+                <article class="Container_article" id="rightMostImage">
+                    <img src="../src/myimage.jpg" at="Kalinga's photo">
                 </article>
             </div >
         '''
@@ -115,7 +115,7 @@ def experience(position, company, duration):
             <article style="float:right"> <h5>''' + duration + '''</h5>
             </article>
         </div>
-        <hr>
+        <!--hr-->
         '''
 
 def experiences():
@@ -140,17 +140,13 @@ def experiences():
 def education(institution, certificate, duration, percentage):
     return \
         '''
-        <div style="display: inline-block">
-            <div align="justify">
-                <article><p>''' + institution + " | " + certificate + ''' with ''' + percentage + '''%''' + '''</p>
-                </article>
-            </div>
-            <div width="50%">
-            <article style="float:right"> <h5>''' + duration + '''</h5>
+        <div>
+            <article><h5>''' + institution + " | " + certificate + ''' with ''' + percentage + '''%''' + '''</h5>
             </article>
-            </div>
+            <article style="float:right;"> <h5>''' + duration + '''</h5>
+            </article>
         </div>
-        <hr>
+        <!--hr-->
         '''
 
 def educations():
@@ -205,8 +201,6 @@ def skeleton():
         + intro() \
         + technical() \
         + functional() \
-        + emptylines(4) \
-        + footer() \
         + experiences() \
         + educations() \
         + personal() \

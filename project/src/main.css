@@ -1,26 +1,28 @@
-#Container {
-    width: 100%;
-    height: auto;
-    margin-top:0px
-    border: 1px solid gray;
-    background-color:#CCC;
-    display: block;
+
+div {
+    border: 1px solid green;
 }
 div article {
     display: inline-block;
-    #background-color:red;
+    background-color:#CCC;
+    padding:0px;
+    margin:0px
 }
 div article img {
     width: 180px;
-    height: 195px;
+    height: 194px;
     margin:0px;
+    padding:0px;
 
+}
+div article h5 {
+    margin:0px;
 }
 body {
     margin: 50px
 }
 footer {
-    page-break-after: always;
+    clear:both;
     font-size: 90%;
     align:center;
     background-color:powderblue;
@@ -28,7 +30,16 @@ footer {
 table, th, td {
     border: 1px solid black;
 }
-
+#Container {
+    width: 100%;
+    border-style: solid;
+    border-color: red green blue yellow;
+    background-color:#CCC;
+    display: inline-block;
+}
+.Container_article {
+    background-color:#CCC;
+}
 #rightMostImage {
     float:right;
 }
