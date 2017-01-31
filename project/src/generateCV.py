@@ -243,13 +243,14 @@ def mycover(manager_name, company_name):
             With around 10 years of experience in IT, i am confident that i can step in and make immediate contribution
             to the project and valuable contribution to {1}'s continued success.<p>
 
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;As a software engineer at {1}, I can collaborate closely with Customers, and help
-            junior team members with my knowledge and experience. In addition, I consider myself a flexible, always
-            wanted to take responsibility, take ownership of core components. I consider myself a quick learner and have
-            motivation towards learning new technologies and apply them in solving real world problem.<p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;As a software engineer at {1}, I can collaborate closely with Customers,
+            and help junior team members with my knowledge and experience. In addition, I consider myself a flexible,
+            always wanted to take responsibility, take ownership of core components. I consider myself a quick learner
+            and have motivation towards learning new technologies and apply them in solving real world problems.<p>
 
             <p>&nbsp;&nbsp;&nbsp;&nbsp;I look forward to discuss further on details of this position. In the meantime,
-            Please take a look at my resume attached. Please feel to contact for additional information required if any.
+            please take a look at my resume attached. Please feel free to contact for additional information
+            required if any.
             <p><br>
 
             <p>Mit freundlichen Grüßen / Best regards,<br>
@@ -281,8 +282,8 @@ with open(html_file,'w+') as f:
 
     f.write(message)
 
-manager_name = 'X'
-company_name = 'Y'
+manager_name = ''
+company_name = 'Delphi'
 def cover_page():
     return \
         htmlstart(contact_name) + \
