@@ -12,5 +12,6 @@ print dt.strftime('%y %m %d')
 print dt.strftime('%y-%b-%d')
 print dt.strftime('%y/%b/%d')
 print dt.strftime('%y %b %d')
+print dt.strftime('%d %b %y %H:%M')
 
 print time.time()

@@ -1,6 +1,8 @@
 
 div {
     border: 1px solid green;
+    margin: 0px;
+    padding: 0px;
 }
 div article {
     display: inline-block;
@@ -19,7 +21,7 @@ div article h5 {
     margin:0px;
 }
 body {
-    margin: 50px
+    margin: 5px;
 }
 footer {
     clear:both;
@@ -42,4 +44,41 @@ table, th, td {
 }
 #rightMostImage {
     float:right;
+}
+div article h6{
+    margin:4px;
+    padding:3px;
+}
+h6 {
+    margin : 2px;
+}
+h5 {
+    margin : 2px;
+}
+h4 {
+    margin : 2px;
+}
+h4 {
+    margin : 3px;
+}
+ul{
+    margin:2px;
+}
+ul li {
+    margin:1px;
+}
+p {
+    margin:2px;
+}
+table {
+    margin:5px;
+}
+footer{
+    margin:20px 0px;
+    padding:10px;
+}
+
+body p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
 }
