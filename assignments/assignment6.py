@@ -40,8 +40,29 @@ Vector[min_max[1]] = 0
 print Vector
 
 heading("Module 6 Assignments: 3 matrix using scipy")
-ten_ten_matrix = sp.eye(10, dtype=np.float) * 2
-print ten_ten_matrix
+N = 10
+twos = sp.eye(N, dtype=np.float) * 2
+print twos
 #ten_ten_matrix * 2
 #sp.multiply(ten_ten_matrix, [2])
-print ten_ten_matrix
+
+ones_eight_by_eight = sp.eye(N-2, dtype=np.float)
+print ones_eight_by_eight
+#zeros_eight_by_eight = sp.zeros(sp.shape(ones_eight_by_eight), dtype=np.float)
+twos[0:N-2,2:N] = ones_eight_by_eight
+twos[2:N,0:N-2] = ones_eight_by_eight
+print twos
+
+'''
+a = np.ones((N,N))
+b = np.empty((a.shape[0],a.shape[1]+1))
+print "*" * 30
+print b
+b[:,:-1] = a
+b[:,-1] = np.zeros(a.shape[0],)
+print a
+print b
+print "-" * 50
+ones = np.ones((N, N+1))
+print ones[:,:-1]
+'''
