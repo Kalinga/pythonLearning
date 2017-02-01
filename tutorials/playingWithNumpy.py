@@ -73,4 +73,8 @@ print arr1.transpose()
 print np.invert(arr1)
 print arr1
 print np.eye(3, dtype=np.int8)
+print '*' * 10 + 'Vectorizing Function'+'*' * 10
+vsinc = np.vectorize(np.sinc)
+print vsinc([1.3, 1.5])
+print np.sinc([1.3, 1.5])
 

@@ -283,7 +283,7 @@ with open(html_file,'w+') as f:
     f.write(message)
 
 manager_name = ''
-company_name = 'Delphi'
+company_name = ""
 def cover_page():
     return \
         htmlstart(contact_name) + \
