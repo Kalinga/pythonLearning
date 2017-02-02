@@ -66,3 +66,29 @@ print "-" * 50
 ones = np.ones((N, N+1))
 print ones[:,:-1]
 '''
+heading("Module 6 Assignments: 4 using matplotlib")
+from pylab import *
+n = 256
+X = np.linspace(-np.pi,np.pi,n,endpoint=True)
+Y = np.sin(2*X)
+Y_lower_half = np.sin(X)
+plot (X+np.pi, Y+1, color='blue', alpha=1.00)
+plot (X+np.pi, Y-1, color='red', alpha=1.00)
+fill_between(X+np.pi, Y+1, 1, facecolor='green', alpha=0.5)
+fill_between(X+np.pi , Y-1, -1, where=Y-1>-1,facecolor='black', alpha=0.5)
+fill_between(X+np.pi , Y-1, -1, where=Y-1<-1, facecolor='yellow', alpha=0.5)
+show()
+
+Y1 = np.cos(2*X)
+xlim(0, 4)
+ylim(-2, 2)
+xlabel("X->")
+ylabel("Y->")
+title("This is a sine wave plot")
+
+plot (X+np.pi, Y+1,'bx', color='blue', label='sine')
+plot (X+np.pi, Y1-1,':k', color='red', label='cosine')
+
+legend(loc='upper right')
+show()
+
