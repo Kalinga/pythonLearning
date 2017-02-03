@@ -78,3 +78,15 @@ vsinc = np.vectorize(np.sinc)
 print vsinc([1.3, 1.5])
 print np.sinc([1.3, 1.5])
 
+
+def dummy_func(arg1, arg2):
+
+    if arg1 > arg2:
+        return arg1 - arg2
+    else:
+        return arg2 - arg1
+
+
+vect_func = np.vectorize(dummy_func)
+
+print vect_func([1,4, 3, 6], 5)
