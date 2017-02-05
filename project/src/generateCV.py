@@ -237,6 +237,7 @@ contact_name = "Kalinga Bhusan Ray"
 
 def mycover(manager_name, company_name):
      hiring_manager = manager_name if manager_name else "Hiring Manager"
+     org_name = company_name if company_name else "Organisation"
      str = u'''
         <body>
             <p> Dear {0},<br><br>
@@ -260,7 +261,7 @@ def mycover(manager_name, company_name):
             +917795346374<br>
             </p>
 
-        '''.format(hiring_manager, company_name).encode("utf-8")
+        '''.format(hiring_manager, org_name).encode("utf-8")
      return  str
 
 def skeleton():
