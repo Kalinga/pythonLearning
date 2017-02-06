@@ -1,5 +1,5 @@
 from pylab import *
-
+import matplotlib.pyplot as plt
 def showscatter():
     x = rand(200)
     y = rand(200)

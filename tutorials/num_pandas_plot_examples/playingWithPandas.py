@@ -118,7 +118,7 @@ print df.two
 df['new_col'] = df['two'] * 2
 print df.new_col
 
-print df .sum()
+print df.sum()
 
 print df.mean()
 
@@ -166,3 +166,37 @@ df2 = pd.DataFrame(dict(id=range(4), runs=np.random.randint(0, 100, size=4)))
 print df2
 
 print pd.merge(df1, df2)
+
+clear()
+# Usage of axis: By default axis is 0, meant along rows
+df = pd.DataFrame([[1,2], [3,4]],columns=["col1", "col2"],index =['A', 'B'])
+print df
+print df.mean()
+print df.mean(axis=1)
+
+dates = pd.date_range('20130101', periods=6)
+df = pd.DataFrame(np.random.randn(6,4), index=dates, columns=list('ABCD'))
+print df
+print df[:3]
+print df.loc[dates[0]]
+print df.loc[dates[1:5],["C", "D"]]
+print df.iloc[3:5, 0:2]
+#Scalar value Fast access
+print df.iat[1,1]
+
+clear("Boolean Indexing")
+#Boolean Indexing
+print df[(df.A > 0)]
+print df[df > 0]
+
+print df.apply(np.square)
+print df.apply(np.cumsum) #cumulative sum across rows
+print df.apply(np.cumsum, axis=1) #cumulative sum across col
+
+clear("Using lambdas")
+print df
+print df.apply(lambda x:np.cumsum(x),  axis=1) #cumulative sum across col
+print df.apply(lambda x:np.cumsum(x),  axis=0) #cumulative sum across row
+print df.apply(lambda x: x.max() - x.min(), axis=1) #across cols
+print df.apply(lambda x: x.max() - x.min()) #across rows
+

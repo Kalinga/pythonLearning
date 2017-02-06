@@ -6,9 +6,9 @@ def heading(str):
     print "|" + " " * offset + str + " " * offset + "|"
     print "~" * 80
 
-def clear():
+def clear(hint=""):
     os.system("clear")
-    print "|_|_|" * 30
+    print "|"+ "_" * 10 + hint + ("_" * 10) + "|"
 
 def env():
     os.system("env")
