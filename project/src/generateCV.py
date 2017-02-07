@@ -59,7 +59,7 @@ def pageheading():
                     </address>
                 </article>
                 <article class="Container_article" id="rightMostImage">
-                    <img src="../src/myimage.png" alt="Kalinga's photo">
+                    <img src="../img/myimage.jpg" alt="Kalinga's photo">
                 </article>
             </div >
         '''
