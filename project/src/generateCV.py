@@ -4,7 +4,7 @@ import os
 import datetime
 import pdfkit
 
-cv_name = 'KALINGA_RAY_2017'
+cv_name = 'KALIPRASAD_RAY_2017'
 html_file = "../gen/" + cv_name + '.html'
 pdf_file = "../gen/" + cv_name + '.pdf'
 cover = "../gen/" + 'cover.html'
@@ -48,18 +48,18 @@ def pageheading():
         <body>
             <div id="Container">
                 <article class="Container_article">
-                    <h3>Kalinga Bhusan Ray</h3>
+                    <h3>Kaliprasad Ray</h3>
                     <address>
-                        +91-7795346374<br>
-                        Adugodi<br>
-                        Bangalore<br>
-                        India<br>
-                        PIN: 560030<br>
-                        <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a><br>
+                        +91-9124587714<br>
+                        Bayalishibati<br>
+                        Gop, Puri<br>
+                        Odisha<br>
+                        PIN: 752110<br>
+                        <a href="mailto:raykaliprasad@gmail.com">raykaliprasad@gmail.com</a><br>
                     </address>
                 </article>
                 <article class="Container_article" id="rightMostImage">
-                    <img src="../img/myimage.jpg" alt="Kalinga's photo">
+                    <img src="../img/kalia_photo.png" alt="Kaliprasad's photo">
                 </article>
             </div >
         '''
@@ -67,11 +67,10 @@ def pageheading():
 def intro():
     return \
         '''
-        <h4>SPECIALIST</h4>
-        <p>Software engineer with 10 years' experience in IT industry, in various domains,
-            specializing in Car Multimedia application and Mobile application development.
-            1.5yrs of working and living experience in Hildesheim, Germany. Possess strong motivation
-            towards learning German language and have completed A2 (Deutsche Sprache)
+        <h4>ITI Mechanic</h4>
+        <p>Solid four months advance theoretical knowledge with practical experience has made me a better
+            professional mechanic after passing my ITI in Electrical trade. Currently I am looking for
+            a job in a growing company where i can apply my skills and knowledge.
         </p>
         '''
 
@@ -79,17 +78,17 @@ def technical():
     return \
         '''
         <h4>Technical Domain:</h4>
-                <p>Object Oriented application and framework development using C, C++, Symbian C++, Core Java,
-                   Xtend/Xtext, DSL, Python
-                </p>
+                <p>Inspection and maintenance of electrical machines</p>
                 <ul>
-                    <li>Application development for Linux, Symbian, MeeGo devices</li>
-                    <li>Working knowledge of Android</li>
-                    <li>GUI development using QT, QML, gtk, UIQ, S60</li>
-                    <li>Working knowledge of HTML , XML Java Script, Shell script, Perl, Data Analysis and Machine Learning</li>
-                    <li>Git, ClearCase, Subversion,Eclipse, Carbide, CodeWarior, UML etc..</li>
-                    <li>TDD, Unit testing (JUnit, Google Test), Integration Testing</li>
-                    <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
+                    <li>Electric hardware and control</li>
+                    <li>Mould</li>
+                    <li>AutoCAD</li>
+                    <li>eCAD</li>
+                    <li>Programmable  logic control</li>
+                    <li>Pneumatic</li>
+                    <li>Hydraulic</li>
+                    <li>Machine Lab</li>
+                    <li>Electronics</li>
                 </ul>
                 <hr>
         '''
@@ -113,11 +112,12 @@ def keyresponsibilities():
         '''
         <h4>Key Responsibilities:</h4>
         <ul>
-            <li>Participation in the Sprint Planning (Agile) and Review</li>
-            <li>Design (using UML) and Design review</li>
-            <li>Coding(C, C++, Java, Python/Linux), code review, unit testing and documentation.</li>
-            <li>Responsible for feature development of various product.</li>
-            <li>Test Plan and Test Automation</li>
+            <li>Assemble, install, test, and maintain electrical or electronic wiring, equipment, appliances</li>
+            <li>Diagnose malfunctioning systems and components</li>
+            <li>Inspect electrical systems, equipment, and components to identify defects, and the need for
+                adjustment or repair</li>
+            <li>Install ground leads and connect power cables to equipment, such as motors</li>
+            <li>Repair or replace wiring, equipment using hand tools and power tools</li>
         </ul>
         <hr>
         '''
@@ -138,21 +138,10 @@ def experience(position, company, duration):
 def experiences():
     return \
     '''<h4>EXPERIENCE:</h4>''' + \
-    experience("Specialist-Car Multimedia",
-               "Robert Bosch Engineering and Business Solutions, Bangalore",
-               "Dec'11-Present") + \
-    experience("Senior Software Engineer-R&D (Adaptxt)",
-               "Keypoint technology, Hyd",
-               "Mar'10-Dec'11") + \
-    experience("Senior Software Engineer (Azingo Browser)",
-               "Azingo Soft Systems India PVT LTD, Hyd",
-               "May'09-Mar'10") + \
-    experience("Software Engineer- (Sasken Media Player)",
-               "Sasken Communication Technologies, Bangalore",
-               "Dec'06-May'09") + \
-    experience("MIS executive",
-               "iSeva,E4E Pvt ltd,Bangalore",
-               "Apr'06-Dec'06")
+    experience("Machine/Electrician Trainee",
+               "Central Tool Room & Training Centre,Bhubaneswar",
+               "Oct'16-Present")
+
 
 def education(institution, certificate, duration, percentage):
     return \
@@ -170,36 +159,15 @@ def educations():
     return \
         '''
         <br><h4>EDUCATION:</h4>''' + \
-        education("ABIT Cuttack, Odisha",
-                  "BE Computer Science and Engineering",
-                  "2001-2005", "71") + \
-        education("Council of Higher Secondary Education, Orissa",
-                  "Higher Secondary Examination Certificate",
-                  "1998-2000", "65") + \
+        education("CTTC,Bhubaneswar",
+                  "Certificate Course in advance machine maintenance",
+                  "Oct' 2016- Till Date", "80") + \
+        education("Sailabala Memorial ITC, Nimapara",
+                  "ITI Electrical",
+                  "July' 2014- July' 2016", "70") + \
         education("Board of secondary Education, Orissa",
                   "High school Certificate Examination ",
-                  "1997-1998", "78")
-def projects():
-    return \
-        '''
-        <br>
-        <h4>PROJECTS:</h4>
-        <h5>Recent Projects</h5>
-        <ul>
-            <li>Next generation service framework development (using Xtext and Xtend DSL development)</li >
-            <li>Java plug-in development</li>
-                C++ code generation for service specific Stub and Proxy component (Code generation for DBus introspection xml)
-                Automatic generation of C++ adapter felicitating Interface test of the services running in the target
-            <li>QT/QML based HMI and application development</li>
-                 HMI application displaying Navigation data, GPS data and CAN data
-                 Home screen development for Infotainment Head Unit
-         </ul>
-         <h5>Old Projects</h5>
-         <ul>
-            <li>Webkit based browser UI and view development using gtk+</li>
-            <li>Media Player and Media Gallery application development using S60 and UIQ symbian-UI framework</li >
-        </ul>
-        '''
+                  "Jun 2013- Jul 2014", "51")
 
 
 def personal():
@@ -209,19 +177,11 @@ def personal():
         <table>
           <tr>
             <td>Date of Birth</td>
-            <td>02 June 1983</td>
+            <td>15 Nov 1991</td>
           </tr>
           <tr>
             <td>Marital Status</td>
             <td>Married</td>
-          </tr>
-          <tr>
-            <td>Languages Known</td>
-            <td>English, Hindi and Oriya, German(A2)</td>
-          </tr>
-          <tr>
-            <td>Passport Number</td>
-            <td>G6513632</td>
           </tr>
         </table>
         '''
@@ -232,8 +192,8 @@ def htmlend():
             </body>
         </html>
         '''
-contact_email = "mailto:mail.kalinga@gmail.com"
-contact_name = "Kalinga Bhusan Ray"
+contact_email = "mailto:raykaliprasad@gmail.com"
+contact_name = "Kaliprasad Ray"
 
 def mycover(manager_name, company_name):
      hiring_manager = manager_name if manager_name else "Hiring Manager"
@@ -270,14 +230,9 @@ def skeleton():
         + pageheading() \
         + intro() \
         + technical() \
-        + functional() \
         + keyresponsibilities() \
         + experiences() \
-        + projects() \
         + educations() \
-        + personal() \
-        + footer(contact_email, contact_name,
-                 datetime.datetime.today().strftime('%d %b %y %H:%M')) \
         + htmlend()
 
 with open(html_file,'w+') as f:
@@ -298,4 +253,4 @@ with open(cover,'w+') as f:
     message = cover_page()
     f.write(message)
 
-pdfkit.from_file(html_file, pdf_file, cover=cover, cover_first=True)
+pdfkit.from_file(html_file, pdf_file)
