@@ -79,19 +79,22 @@ def technical():
     return \
         '''
         <h4>Technical Domain:</h4>
-                <p>Object Oriented application and framework development using C, C++, Symbian C++, Core Java,
-                   Xtend/Xtext, DSL, Python
-                </p>
-                <ul>
-                    <li>Application development for Linux, Symbian, MeeGo devices</li>
-                    <li>Working knowledge of Android</li>
-                    <li>GUI development using QT, QML, gtk, UIQ, S60</li>
-                    <li>Working knowledge of HTML , XML Java Script, Shell script, Perl, Data Analysis and Machine Learning</li>
-                    <li>Git, ClearCase, Subversion,Eclipse, Carbide, CodeWarior, UML etc..</li>
-                    <li>TDD, Unit testing (JUnit, Google Test), Integration Testing</li>
-                    <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
-                </ul>
-                <hr>
+            <ul>
+                <li>Object Oriented application and framework development using C, C++</li>
+                <li>Domain Specific Language development using Core Java, Xtend/Xtext</li>
+                <li>Integration Test framework development using Python</li>
+                <li>HMI Application development for Linux, Symbian, MeeGo devices</li>
+                <li>GUI development using QT, QML, gtk, UIQ, S60</li>
+                <li>Sound knowledge of HTML, XML Java Script</li>
+                <li>Git, ClearCase, Subversion,Eclipse, Carbide, CodeWarior etc..</li>
+                <li>TDD, Unit testing (JUnit, Google Test), Integration Testing</li>
+                <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
+                <li>Sound knowledge of productivity tools like puppet, vagrant</li>
+                <li>Disigning using UML, Enterprise Architect</li>
+                <li>Working knowledge of Android, Shell script, Perl, Data Analysis and Machine Learning</li>
+
+            </ul>
+            <hr>
         '''
 
 def functional():
