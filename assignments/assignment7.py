@@ -30,7 +30,7 @@ print df[df["Adj Close"] == 245.4]
 
 #df['rolling_avg'].plot()
 #df['Adj Close'].plot()
-
+heading("Module 7 Assignments: 3 Plotting of Adj.Close and Moving avg")
 for i in df.index:
     df['Date'][i] = dt.strptime( df['Date'][i], '%m/%d/%Y')
 
@@ -50,4 +50,3 @@ plt.plot(df['Date'].values, df['rolling_avg'].values, 'g-', label='rolling_avg')
 plt.legend(loc='upper right')
 plt.show()
 
-heading("Module 7 Assignments: 3 ")
