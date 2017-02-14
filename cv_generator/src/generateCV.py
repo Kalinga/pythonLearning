@@ -87,6 +87,7 @@ def technical():
                 <li>GUI development using QT, QML, gtk, UIQ, S60</li>
                 <li>Sound knowledge of HTML, XML Java Script</li>
                 <li>Git, ClearCase, Subversion,Eclipse, Carbide, CodeWarior etc..</li>
+                <li>Make, CMake, Boost Library</li>
                 <li>TDD, Unit testing (JUnit, Google Test), Integration Testing</li>
                 <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
                 <li>Sound knowledge of productivity tools like puppet, vagrant</li>
