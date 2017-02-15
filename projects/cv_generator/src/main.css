@@ -33,6 +33,8 @@ footer {
 }
 table, th, td {
     border: 1px solid black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10px;
 }
 #Container {
     width: 100%;

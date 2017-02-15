@@ -81,12 +81,13 @@ def technical():
         <h4>Technical Domain:</h4>
             <ul>
                 <li>Object Oriented application and framework development using C, C++</li>
-                <li>Domain Specific Language development using Core Java, Xtend/Xtext</li>
+                <li>Domain Specific Language (DSL) development using Core Java, Xtend/Xtext</li>
                 <li>Integration Test framework development using Python</li>
                 <li>HMI Application development for Linux, Symbian, MeeGo devices</li>
                 <li>GUI development using QT, QML, gtk, UIQ, S60</li>
-                <li>Sound knowledge of HTML, XML Java Script</li>
+                <li>Sound knowledge of HTML, CSS, XML, Java Script</li>
                 <li>Git, ClearCase, Subversion,Eclipse, Carbide, CodeWarior etc..</li>
+                <li>Make, CMake, Boost Library</li>
                 <li>TDD, Unit testing (JUnit, Google Test), Integration Testing</li>
                 <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
                 <li>Sound knowledge of productivity tools like puppet, vagrant</li>
@@ -103,7 +104,7 @@ def functional():
         <h4>Functional Domain:</h4>
                 <ul>
                     <li>Car Multimedia Application development</li>
-                    <li>Service framework development</li>
+                    <li>Service framework development (Using DSL)</li>
                     <li>Interface Test Automation</li>
                     <li>Media Player and Media Gallery</li>
                     <li>Webkit based web browser</li>
