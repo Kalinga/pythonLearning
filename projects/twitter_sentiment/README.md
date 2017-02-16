@@ -34,6 +34,8 @@ However, after looking _'dryscrape'_ documentation, i changed my mind and used
 first solution(because when i checked my system, i had 'python-qt4' was already installed ).
 
 __Additional packages installed:__
+* `python-qt4`
 * `python-tweepy`
 * `python-oauth`
+
 

@@ -55,13 +55,13 @@ class BirthDayCelebrities(object):
         # result is a QString.
         result = r.frame.toHtml()
         result_py = str(result.toAscii())
-        s = soup(result_py)
+        s = soup(result_py, "lxml")
         #print s
 
         celeb_list = BirthDayCelebrities.parse_soup(s)
 
-        for celeb in celeb_list:
-            print '-' * 50
+        for index, celeb in enumerate(celeb_list):
+            print '-' * 50 + str(index + 1) + '-' * 50
             print "Name: " + celeb[0]
             print "Image: " + celeb[1]
             print "Profession: " + celeb[2]
