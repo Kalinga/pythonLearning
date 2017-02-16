@@ -33,3 +33,7 @@ Initially, I thought to make use of _'dryscrape'_, thinking others will take mor
 However, after looking _'dryscrape'_ documentation, i changed my mind and used
 first solution(because when i checked my system, i had 'python-qt4' was already installed ).
 
+__Additional packages installed:__
+* `python-tweepy`
+* `python-oauth`
+
