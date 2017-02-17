@@ -58,18 +58,22 @@ class BirthDayCelebrities(object):
         s = soup(result_py, "lxml")
         #print s
 
-        celeb_list = BirthDayCelebrities.parse_soup(s)
-
-        for index, celeb in enumerate(celeb_list):
-            print '-' * 50 + str(index + 1) + '-' * 50
-            print "Name: " + celeb[0]
-            print "Image: " + celeb[1]
-            print "Profession: " + celeb[2]
-            print "Best works: " + celeb[3]
-
+        return  BirthDayCelebrities.parse_soup(s)
 
 if __name__ == "__main__":
     print "*** Attention***: http_proxy and https_proxy env variables are properly set and reflected in pycharm"
     url_from_browser = "http://m.imdb.com/feature/bornondate"
     celeb = BirthDayCelebrities()
-    BirthDayCelebrities.getDetails(url_from_browser)
+    celeb_list = BirthDayCelebrities.getDetails(url_from_browser)
+
+    from twitter import Twitter
+    twitter = Twitter(*sys.argv[1:])
+    #twitter.getTweets()
+
+    for index, celeb in enumerate(celeb_list):
+        print '@' * 50 + str(index + 1) + '@' * 50
+        print "Name: " + celeb[0]
+        print "Image: " + celeb[1]
+        print "Profession: " + celeb[2]
+        print "Best works: " + celeb[3]
+        twitter.getMatchedTweets(q = celeb[0], lang = 'en')

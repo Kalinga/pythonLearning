@@ -45,6 +45,7 @@ class Render(QWebPage):
 if __name__ == "__main__" :
     try:
         webPage = Render("http://www.google.com")
+        print str(webPage.frame.toHtml().toAscii())
     except Exception, e :
         print e.message
 

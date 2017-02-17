@@ -35,7 +35,9 @@ first solution(because when i checked my system, i had 'python-qt4' was already 
 
 __Additional packages installed:__
 * `python-qt4`
-* `python-tweepy`
-* `python-oauth`
-
-
+* `tweepy 3.5.0` (API has input argument for proxy)
+* `requests 2.13.0`
+* `PySocks 1.6.6`
+* `six 1.10.0`
+* `requests-oauthlib 0.8.0`
+* `oauthlib 2.0.1`
