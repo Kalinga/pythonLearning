@@ -26,6 +26,8 @@ class Render(QWebPage):
 
         QWebPage.__init__(self)
         self.loadFinished.connect(self._loadFinished)
+        self.loadStarted.connect(self._loadStarted)
+        self.loadProgress.connect(self._loadProgress)
         self.mainFrame().load(QUrl(url))
 
         print "Render.__initi__ ->"
@@ -33,12 +35,18 @@ class Render(QWebPage):
         self.app.exec_()
         self.view()
 
-    def _loadFinished(self, result):
-        print "loading finished"
+    def _loadStarted(self, result):
+        print "_loadStarted"
+
+    def _loadProgress(self, progress):
+        print "_loadProgress: ", progress
+
+    def _loadFinished(self, ok):
+        print "loading finished", ok
         self.frame = self.mainFrame()
-        # result = self.frame.toHtml()
-        # contents = str(result.toAscii())
-        # print contents
+        frame_html = self.frame.toHtml()
+        contents = str(frame_html.toAscii())
+        print contents
         self.app.quit()
 
 
