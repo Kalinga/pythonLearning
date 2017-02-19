@@ -9,7 +9,7 @@ from PyQt4.QtNetwork import *
 
 class Render(QWebPage):
     def __init__(self, url):
-        print "Render.__initi__ <-"
+        print "Render.__init__ <-"
         print "using PyQt WebKit"
 
         self.app = QtGui.QApplication(sys.argv)
@@ -30,12 +30,11 @@ class Render(QWebPage):
         self.loadProgress.connect(self._loadProgress)
         self.mainFrame().load(QUrl(url))
 
-        print "Render.__initi__ ->"
-
+        print "Render.__init__ ->"
         self.app.exec_()
         self.view()
 
-    def _loadStarted(self, result):
+    def _loadStarted(self):
         print "_loadStarted"
 
     def _loadProgress(self, progress):
@@ -52,7 +51,9 @@ class Render(QWebPage):
 
 if __name__ == "__main__" :
     try:
-        webPage = Render("http://www.google.com")
+        url = 'http://m.imdb.com/feature/bornondate'
+        #url = 'http://www.google.com'
+        webPage = Render(url)
         print str(webPage.frame.toHtml().toAscii())
     except Exception, e :
         print e.message

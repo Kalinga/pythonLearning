@@ -190,6 +190,7 @@ def projects():
         <h4>PROJECTS:</h4>
         <h5>Recent Projects</h5>
         <ul>
+            <li>Test Automation framework development using python,xsd, JSON etc..</li >
             <li>Next generation service framework development (using Xtext and Xtend DSL development)</li >
             <li>Java plug-in development</li>
                 C++ code generation for service specific Stub and Proxy component (Code generation for DBus introspection xml)
