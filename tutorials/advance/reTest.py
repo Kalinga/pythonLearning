@@ -17,9 +17,9 @@ class RETest(unittest.TestCase):
         print "RETest:tearDown_:end"
 
     def test_Email1(self):
-        print reEmail("Hari's email id is harigovind@in.bosch.com")
-        self.assertTrue(reEmail("Hari's email id is harigovind@in.bosch.com") ==
-                                "harigovind@in.bosch.com")
+        print reEmail("Hari's email id is harigovind@in.google.com")
+        self.assertTrue(reEmail("Hari's email id is harigovind@in.google.com") ==
+                                "harigovind@in.goolge.com")
 
     def test_Email2(self):
         self.assertFalse(reEmail("This is an invalid email id is -invalid.mail@address.co.in") ==

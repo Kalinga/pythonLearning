@@ -35,11 +35,12 @@ first solution(because when i checked my system, i had 'python-qt4' was already 
 
 **Celebrity Icon quality:** The Link for the celebrity icon was of small size, and displaying
 that in the pyplot was getting blurred. So I looked for a better image, that i found from desktop
-webside and found a pattern in the link for the smaller image and bigger image.
-For example:
+website and found a pattern in the link for the smaller image and bigger image.
+See below images, The links for the images differ in the last part of the links.
+
 ![Smaller Image](https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1MjQ3MjQyOF5BMl5BanBnXkFtZTcwMTYxODgwNQ@@._V1._CR1,0,1388,2048_SX40_SY59.jpg "Ron Eldard ")
 ![Larger Image](https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1MjQ3MjQyOF5BMl5BanBnXkFtZTcwMTYxODgwNQ@@._V1_QL50_SY1000_CR0,0,666,1000_AL_.jpg "Ron Eldard ")
-The link for the images differ in the last part of the links.
+
 
 
 __Additional packages installed:__
