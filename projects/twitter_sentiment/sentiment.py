@@ -1,14 +1,16 @@
 import matplotlib.pyplot as plt
+from skimage import io
 import os
 from string import punctuation
 import csv
 import codecs
+import re
 
 class Senti():
     def __init__(self):
         pass
 
-    def sentiment_analysis(self, tweet_file, indiv):
+    def sentiment_analysis(self, tweet_file, indiv, icon_url):
         self.tweet_file = tweet_file
         self.indiv = indiv
         pos_sent = open("positive_words.txt").read()
@@ -38,6 +40,7 @@ class Senti():
             tweet_list_dup.append(tweet)
             tweet_processed = tweet.lower()
 
+            # Remove punctuations
             for p in list(punctuation):
                 tweet_processed = tweet_processed.replace(p, '')
 
@@ -51,6 +54,7 @@ class Senti():
 
             positive_counts.append(positive_counter)
             negative_counts.append(negative_counter)
+
             if positive_counter > negative_counter:
                 conclusion.append("Positive")
                 tot_pos += 1
@@ -101,6 +105,20 @@ class Senti():
         sizes = [sentiments['Positive'] / float(all_total), sentiments['Negative'] / float(all_total),
                  sentiments['Neutral'] / float(all_total)]
 
+        pattern = re.compile("(.)*_V1")
+        quality_pic_pattern = "_QL50_SY1000_CR0,0,666,1000_AL_.jpg"
+        icon_url = re.match(pattern, icon_url).group() + quality_pic_pattern
+        #print icon_url
+        image = io.imread(icon_url)
+
+        fig1 = plt.figure() # create a figure with the default size
+        ax1 = fig1.add_subplot(2,2,1)
+
+        ax1.imshow(image, aspect='equal')
+        ax1.axes.get_xaxis().set_visible(False)
+        ax1.axes.get_yaxis().set_visible(False)
+
+        plt.subplot(2,2,2)
         plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True)
         plt.axis('equal')
         plt.title('sentiment for - ' + indiv)

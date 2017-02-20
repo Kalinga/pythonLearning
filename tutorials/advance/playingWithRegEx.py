@@ -1,4 +1,5 @@
 import re
+
 search = re.search('Ox',"a quick brown fox jumps over a lazy dog", re.IGNORECASE)
 print search
 if search:
@@ -32,3 +33,9 @@ print pattern.match(str).groups(0)
 print "TODO: Name to a group in RE:\n"
 print "TODO: Try pallindrome in RE:\n"
 print "TODO: 'time' module:\n"
+
+icon_url = "https://images-na.ssl-images-amazon.com/images/M/" \
+           "MV5BMTI3NDQ3NTMwNF5BMl5BanBnXkFtZTYwMzY4NjEz._V1._CR0,0,484,714_SX40_SY59.jpg"
+pattern = re.compile("(.)*_V1")
+match = re.match(pattern, icon_url)
+print match.group()

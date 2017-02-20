@@ -77,9 +77,9 @@ if __name__ == "__main__":
     print "*** Attention***: http_proxy and https_proxy env variables are properly set and reflected in pycharm"
     url_from_browser = "http://m.imdb.com/feature/bornondate"
     celeb = BirthDayCelebrities()
-    #celeb_list = BirthDayCelebrities.getDetails(url_from_browser)
-    celeb_list = BirthDayCelebrities.getDetailsLocalContent()
-    celeb_list = celeb_list[0:2]
+    celeb_list = BirthDayCelebrities.getDetails(url_from_browser)
+    #celeb_list = BirthDayCelebrities.getDetailsLocalContent()
+    celeb_list = celeb_list[1:5]
 
     from twitter import Twitter
     twitter = Twitter(*sys.argv[1:])
@@ -103,4 +103,4 @@ if __name__ == "__main__":
             file_write.write(celeb_tweets.encode("utf-8"))
 
         senti = Senti()
-        senti.sentiment_analysis(write_file_name, celeb[0])
+        senti.sentiment_analysis(write_file_name, celeb[0], celeb[1])
