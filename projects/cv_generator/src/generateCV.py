@@ -192,12 +192,12 @@ def projects():
         <ul>
             <li>Test Automation framework development using python,xsd, JSON etc..</li >
             <li>Next generation service framework development (using Xtext and Xtend DSL development)</li >
-            <li>Java plug-in development</li>
+            <li>Java plug-in development:
                 C++ code generation for service specific Stub and Proxy component (Code generation for DBus introspection xml)
-                Automatic generation of C++ adapter felicitating Interface test of the services running in the target
-            <li>QT/QML based HMI and application development</li>
+                Automatic generation of C++ adapter felicitating Interface test of the services running in the target</li>
+            <li>QT/QML based HMI and application development:
                  HMI application displaying Navigation data, GPS data and CAN data
-                 Home screen development for Infotainment Head Unit
+                 Home screen development for Infotainment Head Unit</li>
          </ul>
          <h5>Old Projects</h5>
          <ul>
