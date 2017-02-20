@@ -13,7 +13,7 @@ class Twitter(object):
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
 
-        self.api = tweepy.API(auth)#,proxy='https://username:password@proxy.company.com:8080')
+        #self.api = tweepy.API(auth)#,proxy='https://username:password@proxy.company.com:8080')
 
     def getTweets(self):
         public_tweets = self.api.home_timeline()

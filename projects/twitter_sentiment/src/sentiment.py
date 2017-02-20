@@ -13,10 +13,14 @@ class Senti():
     def sentiment_analysis(self, tweet_file, indiv, icon_url):
         self.tweet_file = tweet_file
         self.indiv = indiv
-        pos_sent = open("positive_words.txt").read()
+
+        positive_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), "positive_words.txt")
+        pos_sent = open( positive_file ).read()
         positive_words = pos_sent.split('\n')
         positive_counts = []
-        neg_sent = open('negative_words.txt').read()
+
+        negative_file = os.path.join(os.path.dirname(os.path.realpath(__file__)), "negative_words.txt")
+        neg_sent = open(negative_file ).read()
         negative_words = neg_sent.split('\n')
         negative_counts = []
         conclusion = []
