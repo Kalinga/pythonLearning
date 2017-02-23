@@ -13,7 +13,7 @@ class Twitter(object):
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
 
-        #self.api = tweepy.API(auth)#,proxy='https://username:password@proxy.company.com:8080')
+        self.api = tweepy.API(auth)#,proxy='https://username:password@proxy.company.com:8080')
 
     def getTweets(self):
         public_tweets = self.api.home_timeline()
@@ -50,4 +50,7 @@ if __name__ == "__main__":
         file_write.write(celeb_tweets.encode("utf-8"))
 
     senti = Senti()
-    senti.sentiment_analysis(write_file_name, celeb)
+    image_link = 'https://images-na.ssl-images-amazon.com/images/M/' \
+                 'MV5BYWJmZmE1YWItYjBjYi00ODU4LTg2MDUtOTQyNWY2NjFlOGM5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTExNDQ2MTI' \
+                 '@._V1_UY132_CR1,0,89,132_AL_.jpg'
+    senti.sentiment_analysis(write_file_name, celeb, image_link)

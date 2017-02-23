@@ -1,6 +1,8 @@
-#Problem statement: "Twitter Sentiment Analysis"
+# Problem statement: "Twitter Sentiment Analysis"
 Twitter sentiment analysis about an actor taken birth on this date as per the IMDB data.
 Perform such analysis for 10 actors shown in the top of the list.
+
+_This project was done as part of a Project evaluation task given by __[Edureka](https://www.edureka.co/)___
 
 __Details:__
 IMDB provides a list of celebrities born on the current date. Below is the link:
@@ -20,7 +22,12 @@ will be in the below format.
 > * Best Work:
 > * Overall Sentiment on Twitter: Positive, Negative or Neutral:
 
- 
+__How to use this project:__
+You can execute the script by `python imdb_birthday_celebrity.py
+ consumer_key consumer_secret access_token access_token_secret`
+ _You must aquire these keys by creating an app account in twitter._
+ _They are not shared for secirity reasons._
+
 
 __Additional packages installed:__
 * `python-qt4`
@@ -65,3 +72,6 @@ See below images, The links for the images differ in the last part of the links.
 
 __Known issues__: Few times `loadfinish` of the Webkit Page does not come, without that parsing
 never get started and process halts indefinitely.
+
+# License:
+[The MIT License](LICENSE)
