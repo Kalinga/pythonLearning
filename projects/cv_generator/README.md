@@ -13,3 +13,6 @@ The Project can be installed using
 
 I plan to use 'django-pdfkit' for this task however facing some problems now,
 and used 'pdfkit' for quick solution to this problem
+
+# License:
+[The MIT License](LICENSE)
