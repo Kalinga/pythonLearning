@@ -1,8 +1,8 @@
-# Problem statement: "Twitter Sentiment Analysis"
+# `Problem statement: ` ``"Twitter Sentiment Analysis"``
 Twitter sentiment analysis about an actor taken birth on this date as per the IMDB data.
 Perform such analysis for 10 actors shown in the top of the list.
 
-_This project was done as part of a Project evaluation task given by __[Edureka](https://www.edureka.co/)___
+_This project was done as part of a Project evaluation task given by [Edureka](https://www.edureka.co/)_
 
 __Details:__
 IMDB provides a list of celebrities born on the current date. Below is the link:
