@@ -83,7 +83,7 @@ h5 {
 
 h4 {
     margin : 0px;
-    padding:4px;
+    padding:1px;
 }
 
 body div article h3 {
@@ -128,4 +128,22 @@ body footer p{
 body p{
     font-family: "Times New Roman", Times, serif;
     font-size: 14px;
+}
+
+body div article a {
+   font-size: 12px;
+   background-color:#CCC;
+   margin : 2px;
+}
+
+span {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    color:green;
+}
+
+#certificate {
+    width: 33%;
+    background-color:#FFF;
+    font-weight: bold;
 }
