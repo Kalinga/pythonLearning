@@ -47,15 +47,16 @@ def pageheading():
         '''
         <body>
             <div id="Container">
-                <article class="Container_article">
+                <article class="Container_article" id="personal_details">
                     <h3>Kalinga Bhusan Ray</h3>
                     <address>
-                        +91-7795346374<br>
-                        Adugodi<br>
-                        Bangalore<br>
-                        India<br>
-                        PIN: 560030<br>
-                        <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a><br>
+                        M: +91-7795346374<br>
+                        E: <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a><br>
+                        <a href=https://www.linkedin.com/in/kalinga-bhusan-ray-88505724/>LinkedIn</a>
+                        <a href=https://github.com/Kalinga>GitHub</a><br>
+                        DOB: 2nd June 1983<br>
+                        Indian | Married<br>
+                        Adugodi, Bangalore, India, PIN: 560030<br>
                     </address>
                 </article>
                 <article class="Container_article" id="rightMostImage">
@@ -280,7 +281,6 @@ def skeleton():
         + experiences() \
         + projects() \
         + educations() \
-        + personal() \
         + footer(contact_email, contact_name,
                  datetime.datetime.today().strftime('%d %b %y %H:%M')) \
         + htmlend()

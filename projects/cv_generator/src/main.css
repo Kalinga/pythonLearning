@@ -1,27 +1,36 @@
 body {
     margin: 5px;
 }
+
 div {
     border: 1px solid green;
     margin: 0px;
     padding: 0px;
 }
-div article {
+
+body div article {
     display: inline-block;
     background-color:#CCC;
     padding:0px;
-    margin:0px
-}
-div article img {
-    width: 160px;
-    height: 194px;
     margin:0px;
-    padding:0px;
 
+    # border: 1px solid red;
 }
+
+body div article img {
+    width: 160px;
+    height: 193px;
+    margin:0px;
+    padding:1px;
+    float:right;
+
+    #border: 1px solid blue;
+}
+
 div article h5 {
     margin:0px;
 }
+
 address {
     margin:10px;
 }
@@ -55,6 +64,10 @@ table, th, td {
     float:right;
 }
 
+#personal_details {
+    width: 50%;
+}
+
 div article h6{
     margin:3px;
     padding:2px;
@@ -63,6 +76,7 @@ div article h6{
 h6 {
     margin : 2px;
 }
+
 h5 {
     margin : 2px;
 }
@@ -70,6 +84,16 @@ h5 {
 h4 {
     margin : 0px;
     padding:4px;
+}
+
+body div article h3 {
+    margin : 0px;
+    padding: 0px;
+}
+
+address {
+    margin : 5px;
+    padding: 0px;
 }
 
 ul{
