@@ -183,26 +183,24 @@ def certificate_link(cert, institute, duration, link):
             <article style="float:right"> <h6>''' + duration + '''</h6>
             </article>
         </div>
-        <!--hr-->
         '''
 
 def certificates():
     return \
     '''<h4>CERTIFICATION:</h4>''' + \
-    certificate("Embedded Systems Design",
-               "Kiona software, Bangalore",
-               "Dec'05-Apr'06") + \
-    certificate("Symbian OS Essentials",
-               "Cranes Varsity, Cranes Software International Limited",
-               "Jan'07-Mar'07") + \
-    certificate("Symbian C++",
-               "Cranes Varsity, Cranes Software International Limited",
-               "Mar'07-May'07") + \
     certificate_link("Python Certification Training",
                "Edureka",
                "Dec'16-Feb'17",
-               "https://www.edureka.co/my-certificate/0d74fa2c1a12a33be340ad3c0c6ec264"
-    )
+               "https://www.edureka.co/my-certificate/0d74fa2c1a12a33be340ad3c0c6ec264") + \
+    certificate("Symbian C++",
+              "Cranes Varsity, Cranes Software International Limited",
+              "Mar'07-May'07") + \
+    certificate("Symbian OS Essentials",
+               "Cranes Varsity, Cranes Software International Limited",
+               "Jan'07-Mar'07") + \
+    certificate("Embedded Systems Design",
+               "Kiona software, Bangalore",
+               "Dec'05-Apr'06")
 
 
 def education(institution, certificate, duration, percentage):
