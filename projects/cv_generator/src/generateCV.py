@@ -68,11 +68,13 @@ def pageheading():
 def intro():
     return \
         '''
-        <h4>SPECIALIST</h4>
-        <p>Software engineer with 10 years' experience in IT industry, in various domains,
-            specializing in Car Multimedia application and Mobile application development.
-            1.5yrs of working and living experience in Hildesheim, Germany. Possess strong motivation
-            towards learning German language and have completed A2 (Deutsche Sprache)
+        <h4>CAREER OBJECTIVE</h4>
+        <p> To pursue a Master’s Degree in the field of applied Computer science such as Data Analysis, Data science,
+            which would enhance my existing skills, give me practical exposure of utilizing the theoretical concepts
+            taught during Undergraduate course (as well as self taught in the recent past) in a real time environment.
+            And hone my professional skills that I have gained while working as Software engineer in IT industry for
+            last 10 years. Also want to spent some more time learning and  living in German society as my last 1.5yrs
+            of stay in Hildesheim, Germany was great and enriching in terms of personal and professional life.
         </p>
         '''
 
@@ -85,13 +87,11 @@ def technical():
                 <li>Domain Specific Language (DSL) development using Core Java, Xtend/Xtext</li>
                 <li>Integration Test framework development using Python</li>
                 <li>HMI Application development for Linux, Symbian, MeeGo devices</li>
-                <li>GUI development using QT, QML, gtk, UIQ, S60</li>
                 <li>Sound knowledge of HTML, CSS, XML, Java Script</li>
                 <li>Git, ClearCase, Subversion,Eclipse, Carbide, CodeWarior etc..</li>
                 <li>Make, CMake, Boost Library</li>
                 <li>TDD, Unit testing (JUnit, Google Test), Integration Testing</li>
                 <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
-                <li>Sound knowledge of productivity tools like puppet, vagrant</li>
                 <li>Disigning using UML, Enterprise Architect</li>
                 <li>Working knowledge of Android, Shell script, Perl, Data Analysis and Machine Learning</li>
 
@@ -109,7 +109,6 @@ def functional():
                     <li>Interface Test Automation</li>
                     <li>Media Player and Media Gallery</li>
                     <li>Webkit based web browser</li>
-                    <li>Predictive Input method solution</li>
                 </ul>
                 <hr>
         '''
@@ -121,7 +120,6 @@ def keyresponsibilities():
             <li>Participation in the Sprint Planning (Agile) and Review</li>
             <li>Design (using UML) and Design review</li>
             <li>Coding(C, C++, Java, Python/Linux), code review, unit testing and documentation.</li>
-            <li>Responsible for feature development of various product.</li>
             <li>Test Plan and Test Automation</li>
         </ul>
         <hr>
@@ -252,28 +250,11 @@ def projects():
         '''
 
 
-def personal():
+def personalDelaration():
     return \
         '''
-        <h5>PERSONAL DETAILS</h5>
-        <table>
-          <tr>
-            <td>Date of Birth</td>
-            <td>02 June 1983</td>
-          </tr>
-          <tr>
-            <td>Marital Status</td>
-            <td>Married</td>
-          </tr>
-          <tr>
-            <td>Languages Known</td>
-            <td>English, Hindi and Oriya, German(A2)</td>
-          </tr>
-          <tr>
-            <td>Passport Number</td>
-            <td>G6513632</td>
-          </tr>
-        </table>
+        <h5>DECLARATION</h5>
+        <p>I do hereby declare that the above information is true to the best of my knowledge.</p>
         '''
 
 def htmlend():
@@ -326,6 +307,7 @@ def skeleton():
         + projects() \
         + certificates() \
         + educations() \
+        + personalDelaration() \
         + footer(contact_email, contact_name,
                  datetime.datetime.today().strftime('%d %b %y %H:%M')) \
         + htmlend()
@@ -335,17 +317,4 @@ with open(html_file,'w+') as f:
 
     f.write(message)
 
-manager_name = ''
-company_name = ""
-def cover_page():
-    return \
-        htmlstart(contact_name) + \
-        mycover(manager_name, company_name) + \
-        htmlend()
-
-
-with open(cover,'w+') as f:
-    message = cover_page()
-    f.write(message)
-
-pdfkit.from_file(html_file, pdf_file, cover=cover, cover_first=True)
+pdfkit.from_file(html_file, pdf_file)
