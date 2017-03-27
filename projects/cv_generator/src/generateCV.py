@@ -106,7 +106,7 @@ def functional():
                 <ul>
                     <li>Car Multimedia Application development</li>
                     <li>Service framework development (Using DSL)</li>
-                    <li>Interface Test Automation</li>
+                    <li>Framework development for Interface Test Automation</li>
                     <li>Media Player and Media Gallery</li>
                     <li>Webkit based web browser</li>
                     <li>Predictive Input method solution</li>
@@ -275,6 +275,12 @@ def personal():
           </tr>
         </table>
         '''
+def personalDelaration():
+    return \
+        '''
+        <h5>DECLARATION</h5>
+        <p>I do hereby declare that the above information is true to the best of my knowledge.</p>
+        '''
 
 def htmlend():
     return \
@@ -326,6 +332,7 @@ def skeleton():
         + projects() \
         + certificates() \
         + educations() \
+        + personalDelaration() \
         + footer(contact_email, contact_name,
                  datetime.datetime.today().strftime('%d %b %y %H:%M')) \
         + htmlend()
