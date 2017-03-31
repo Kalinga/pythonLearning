@@ -344,6 +344,19 @@ with open(html_file,'w+') as f:
 
 manager_name = ''
 company_name = ""
+
+def mailBody():
+    '''
+    Hello,
+
+    Please find the attached Profile matching the advertised job along with the cover letter.
+
+    The most recent profile can be found at: https://github.com/Kalinga/pythonLearning/blob/master/projects/cv_generator/cv/KALINGA_RAY_2017.pdf
+
+    Best Regards,
+    Kalinga
+    '''
+
 def cover_page():
     return \
         htmlstart(contact_name) + \
