@@ -171,14 +171,14 @@ def certificate(cert, institute, duration):
         </div>
         <!--hr-->
         '''
-def certificate_link(cert, institute, duration, link):
+def certificate_link(cert, institute, duration, link, id):
     return \
         '''
         <h5>''' + cert + '''</h5>
         <div>
             <article><h6>''' + institute + '''</h6>
             </article>
-            <article id="certificate"><span>Certificate Id: </span><a id="certificate" href='''+link+'''>AYMLVT4A</a>
+            <article id="certificate"><span>Certificate Id: </span><a id="certificate" href='''+link+'''>'''+ id +'''</a>
             </article>
             <article style="float:right"> <h6>''' + duration + '''</h6>
             </article>
@@ -188,10 +188,14 @@ def certificate_link(cert, institute, duration, link):
 def certificates():
     return \
     '''<h4>CERTIFICATION:</h4>''' + \
+    certificate_link("ISTQB Foundation Certification Examination",
+                     "ISTQB",
+                     "21st Mar' 2017",
+                     "http://www.istqb.in/index.php/certified-tester/foundation-level", "Reg# 110964") + \
     certificate_link("Python Certification Training",
                "Edureka",
                "Dec'16-Feb'17",
-               "https://www.edureka.co/my-certificate/0d74fa2c1a12a33be340ad3c0c6ec264") + \
+               "https://www.edureka.co/my-certificate/0d74fa2c1a12a33be340ad3c0c6ec264", "AYMLVT4A") + \
     certificate("Symbian C++",
               "Cranes Varsity, Cranes Software International Limited",
               "Mar'07-May'07") + \
