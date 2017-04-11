@@ -303,22 +303,23 @@ def mycover(manager_name, company_name):
             <p> Dear {0},<br><br>
             &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search for a dynamic and highly motivated Software Engineer for
             your company. The job description is so exciting and very much closely matching my experience and ambitions.
-            With around 10 years of experience in IT, i am confident that i can step in and make immediate contribution
-            to the project and valuable contribution to {1}'s continued success.<p>
+            With around 10 years of experience in IT, I am confident that I can step in and make immediate contribution
+            to the project and valuable contribution to {1}'s continued success.</p>
 
             <p>&nbsp;&nbsp;&nbsp;&nbsp;As a software engineer at {1}, I can collaborate closely with Customers,
             and help junior team members with my knowledge and experience. In addition, I consider myself a flexible,
             always wanted to take responsibility, take ownership of core components. I consider myself a quick learner
-            and have motivation towards learning new technologies and apply them in solving real world problems.<p>
+            and have motivation towards learning new technologies and apply them in solving real world problems.</p>
 
             <p>&nbsp;&nbsp;&nbsp;&nbsp;I look forward to discuss further on details of this position. In the meantime,
             please take a look at my resume attached. Please feel free to contact for additional information
             required if any.
-            <p><br>
-
+            </p><br><br>
+            <p>Thank you for your time.</p><br><br>
             <p>Mit freundlichen Grüßen / Best regards,<br>
             Kalinga Bhusan Ray<br>
-            +917795346374<br>
+            +91 7795346374<br>
+            <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
             </p>
 
         '''.format(hiring_manager, org_name).encode("utf-8")
@@ -347,7 +348,7 @@ with open(html_file,'w+') as f:
     f.write(message)
 
 manager_name = ''
-company_name = ""
+company_name = "DIS AG"
 
 def mailBody():
     '''
