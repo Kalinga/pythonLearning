@@ -5,6 +5,10 @@ import datetime
 import pdfkit
 from input import *
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 if not os.path.exists("../gen"):
     os.mkdir("../gen")
 
@@ -359,7 +363,7 @@ def mycover(manager_name, company_name):
             +91 7795346374 |<a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
             </p>
 
-        '''.format(hiring_manager, org_name).encode("utf-8")
+        '''.format(hiring_manager, org_name)
     return str
 
 def myAddress():
