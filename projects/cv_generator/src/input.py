@@ -15,3 +15,15 @@ company_long_name = ''
 company_address = ''
 company_zip_town = ''
 company_state_country = ''
+
+def mailBody():
+    '''
+    Hello,
+
+    Please find the attached Profile matching the advertised job along with the cover letter.
+
+    The most recent profile can be found at: https://github.com/Kalinga/pythonLearning/blob/master/projects/cv_generator/cv/KALINGA_RAY_2017.pdf
+
+    Best Regards,
+    Kalinga
+    '''
