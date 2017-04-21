@@ -69,8 +69,8 @@ def intro():
     return \
         '''
         <h4>SPECIALIST</h4>
-        <p>Software engineer with decade long experience in IT industry, specializing in sotware application development
-        forCar Multimedia application and handheld devices. 1.5yrs of working and living experience in Hildesheim,
+        <p>Software engineer with decade long experience in IT industry, specializing in software application development
+        for Car Multimedia application and handheld devices. 1.5yrs of working and living experience in Hildesheim,
         Germany. Possess strong motivation towards learning German language and have completed A2 (Deutsche Sprache)</p>
         '''
 

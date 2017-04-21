@@ -8,13 +8,13 @@ pdf_file = "../gen/" + cv_name + '.pdf'
 cover = "../gen/" + 'cover.html'
 
 manager_name = ''
-company_name = ''
+company_name = ""
 
 #Complete Address
 company_long_name = ''
 company_address = ''
 company_zip_town = ''
-company_state_country = ''
+company_state_country = 'Germany'
 
 def mailBody():
     '''
