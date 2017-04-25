@@ -333,7 +333,7 @@ def mycover(manager_name, company_name):
 
             <p>Few of my skills that I would like to highlight here, that enable me to contribute to the success of the company
             <ul>
-                <li>Complete understanding of SDLC (Software development lifecycle)</li>
+                <li>Complete understanding of SDLC (Software development life cycle)</li>
                 <li>Highly skilled in designing, testing, and developing software for resource constraint systems</li>
                 <li>Thorough understanding of Object Oriented Programming, data structures and algorithms</li>
                 <li>Knowledgeable of agile development, best practices, clean code approach</li>
@@ -347,7 +347,7 @@ def mycover(manager_name, company_name):
             this opportunity.</p><br>
             <p>Mit freundlichen Grüßen / Best regards,<br>
             Kalinga Bhusan Ray<br>
-            +91 7795346374 |<a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
+            +91 7795346374 | <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
             </p>
 
         '''.format(hiring_manager, org_name)
