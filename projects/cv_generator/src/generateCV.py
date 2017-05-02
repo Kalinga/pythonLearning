@@ -186,6 +186,10 @@ def certificate_link(cert, institute, duration, link, id):
 def certificates():
     return \
     '''<h4>CERTIFICATION:</h4>''' + \
+    certificate_link("Prüfung Goethe-Zertifikat A2 ",
+                     " Goethe-Instituts, Bangalore ",
+                     "19th Apr' 2017",
+                     "https://www.goethe.de/de/index.html", "PTN# 30549") + \
     certificate_link("ISTQB Foundation Certification Examination",
                      "ISTQB",
                      "21st Mar' 2017",
