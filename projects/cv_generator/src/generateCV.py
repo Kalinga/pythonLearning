@@ -91,7 +91,7 @@ def technical():
                 <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
                 <!--li>Sound knowledge of productivity tools like puppet, vagrant</li-->
                 <li>Disigning using UML, Enterprise Architect</li>
-                <li>Working knowledge of Android, Shell script, Perl, Data Analysis and Machine Learning</li>
+                <li>Working knowledge of Android, Shell script, Perl,MySQL, Data Analysis and Machine Learning</li>
 
             </ul>
             <hr>
