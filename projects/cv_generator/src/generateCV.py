@@ -71,7 +71,7 @@ def intro():
         <h4>SPECIALIST</h4>
         <p>Software engineer with decade long experience in IT industry, specializing in software application development
         for Car Multimedia application and handheld devices. 1.5yrs of working and living experience in Hildesheim,
-        Germany. Possess strong motivation towards learning German language and have completed A2 (Deutsche Sprache)</p>
+        Germany. Possess strong motivation towards learning German language and pursuing B1 at Goethe, Bangalore</p>
         '''
 
 def technical():
@@ -324,11 +324,11 @@ def mycover(manager_name, company_name):
             <p> Dear {0},<br>
             &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search for a dynamic and highly motivated Software Engineer for
             your company. The job description is so exciting and very much closely matching my experience and ambitions.
-            With a Bachelor’s degree in Computer Science and hands-on experience using programming languages such as
-            C, C++, Java, Python on Linux platform to create and implement highly sophisticated software applications
-            for embedded devices such as handheld devices and head units mounted in car dashboard; I am confident that I
-            can step in and make immediate contribution to the project and valuable contribution to {1}'s continued success.</p>
-
+            With a Bachelor’s degree in Computer Science and decade long hands-on experience using programming languages
+            such as C, C++, Java, Python on Linux platform to create and implement highly sophisticated software
+            applications for embedded devices such as handheld devices and head units mounted in car dashboard;
+            I am confident that I can step in and make immediate contribution to the project and valuable contribution
+            to {1}'s continued success.</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;As a software engineer at {1}, I can collaborate closely with Customers,
             and help junior team members with my knowledge and experience. I enjoy being challenged and working on
             projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages
