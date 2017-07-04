@@ -4,7 +4,7 @@ import os
 import datetime
 import pdfkit
 
-cv_name = 'KALIPRASAD_RAY_2017'
+cv_name = 'SONALI_DAS_2017'
 html_file = "../gen/" + cv_name + '.html'
 pdf_file = "../gen/" + cv_name + '.pdf'
 cover = "../gen/" + 'cover.html'
@@ -48,18 +48,17 @@ def pageheading():
         <body>
             <div id="Container">
                 <article class="Container_article">
-                    <h3>Kaliprasad Ray</h3>
+                    <h3>Sonali Das</h3>
                     <address>
-                        +91-9124587714<br>
-                        Bayalishibati<br>
-                        Gop, Puri<br>
-                        Odisha<br>
-                        PIN: 752110<br>
-                        <a href="mailto:raykaliprasad@gmail.com">raykaliprasad@gmail.com</a><br>
+                        +91-8951606750<br>
+                        Narendra Kona, Jatiababa Jaga<br>
+                        Puri,Odisha <br>
+                        PIN: 752001<br>
+                        <a href="mailto:kaushiky.das@gmail.com">kaushiky.das@gmail.com</a><br>
                     </address>
                 </article>
                 <article class="Container_article" id="rightMostImage">
-                    <img src="../img/kalia_photo.png" alt="Kaliprasad's photo">
+                    <img src="../img/sonali_photo.png" alt="Sonali's photo">
                 </article>
             </div >
         '''
@@ -67,28 +66,22 @@ def pageheading():
 def intro():
     return \
         '''
-        <h4>ITI Mechanic</h4>
-        <p>Solid four months advance theoretical knowledge with practical experience has made me a better
-            professional mechanic after passing my ITI in Electrical trade. Currently I am looking for
-            a job in a growing company where i can apply my skills and knowledge.
+        <h4>Experienced Professional</h4>
+        <p>I have experience in academic sector as well as in corporate functions (purchasing department of a leading
+        tile and ceramic company in Bangalore). With good negotiation skill and pursuing power, I can co-ordinate Parents
+        teacher meeting and vendors meeting and other required business events.
         </p>
         '''
 
 def technical():
     return \
         '''
-        <h4>Technical Domain:</h4>
-                <p>Inspection and maintenance of electrical machines</p>
+        <h4>Key IT  Skills:</h4>
                 <ul>
-                    <li>Electric hardware and control</li>
-                    <li>Mould</li>
-                    <li>AutoCAD</li>
-                    <li>eCAD</li>
-                    <li>Programmable  logic control</li>
-                    <li>Pneumatic</li>
-                    <li>Hydraulic</li>
-                    <li>Machine Lab</li>
-                    <li>Electronics</li>
+                    <li>Microsoft Word</li>
+                    <li>Excel</li>
+                    <li>DTP</li>
+                    <li>ERP</li>
                 </ul>
                 <hr>
         '''
@@ -96,14 +89,11 @@ def technical():
 def functional():
     return \
         '''
-        <h4>Functional Domain:</h4>
+        <h4>Other Skill:</h4>
                 <ul>
-                    <li>Car Multimedia Application development</li>
-                    <li>Service framework development</li>
-                    <li>Interface Test Automation</li>
-                    <li>Media Player and Media Gallery</li>
-                    <li>Webkit based web browser</li>
-                    <li>Predictive Input method solution</li>
+                    <li>Event Organisation</li>
+                    <li>Consultation</li>
+                    <li>Understanding students and solving their problem</li>
                 </ul>
                 <hr>
         '''
@@ -112,12 +102,11 @@ def keyresponsibilities():
         '''
         <h4>Key Responsibilities:</h4>
         <ul>
-            <li>Assemble, install, test, and maintain electrical or electronic wiring, equipment, appliances</li>
-            <li>Diagnose malfunctioning systems and components</li>
-            <li>Inspect electrical systems, equipment, and components to identify defects, and the need for
-                adjustment or repair</li>
-            <li>Install ground leads and connect power cables to equipment, such as motors</li>
-            <li>Repair or replace wiring, equipment using hand tools and power tools</li>
+            <li>Teaching</li>
+            <li>Interacting Parents</li>
+            <li>Consulting incoming Parents</li>
+            <li>Price negotiation with exisitng vendors</li>
+            <li>Searching and expanding vendor base</li>
         </ul>
         <hr>
         '''
@@ -138,10 +127,40 @@ def experience(position, company, duration):
 def experiences():
     return \
     '''<h4>EXPERIENCE:</h4>''' + \
-    experience("Machine/Electrician Trainee",
-               "Central Tool Room & Training Centre,Bhubaneswar",
-               "Oct'16-Present")
+    experience("Teacher",
+               "I Play I Learn, Hyderabad",
+               "Six Months") + \
+    experience("Assistant purchase manager",
+               "StonArts.D, Bangalore",
+               "12 Months")
 
+def certificate(cert, institute, duration):
+    return \
+        '''
+        <h5>''' + cert + '''</h5>
+        <div>
+            <article><h6>''' + institute + '''</h6>
+            </article>
+            <article style="float:right"> <h6>''' + duration + '''</h6>
+            </article>
+        </div>
+        <!--hr-->
+        '''
+
+def certificates():
+    return \
+    '''<h4>CERTIFICATION:</h4>''' + \
+    certificate("German Language A1",
+                "Deutschland",
+                "2015") + \
+    certificate("Nursery teacher Traing",
+              "I Play I Learn, Hyderbad",
+              "2011") + \
+    certificate("DTP",
+               "XXX",
+               "2007") + \
+    certificate("Skill development",
+               "OCAC, Puri", "2006")
 
 def education(institution, certificate, duration, percentage):
     return \
@@ -159,15 +178,18 @@ def educations():
     return \
         '''
         <br><h4>EDUCATION:</h4>''' + \
-        education("CTTC,Bhubaneswar",
-                  "Certificate Course in advance machine maintenance",
-                  "Oct' 2016- Till Date", "80") + \
-        education("Sailabala Memorial ITC, Nimapara",
-                  "ITI Electrical",
-                  "July' 2014- July' 2016", "70") + \
+        education("S.C.S. (A) COLLEGE, Puri",
+                  "MA, ORIYA(H)",
+                  "2010", "73") + \
+        education("S.C.S. (A) COLLEGE, Puri",
+                  "+3 ARTS",
+                  "2008", "63") + \
+        education("Womens College, Puri",
+                  "+2 ARTS",
+                  "2005", "47") + \
         education("Board of secondary Education, Orissa",
                   "High school Certificate Examination ",
-                  "Jun 2013- Jul 2014", "51")
+                  "2003", "48")
 
 
 def personal():
@@ -177,13 +199,24 @@ def personal():
         <table>
           <tr>
             <td>Date of Birth</td>
-            <td>15 Nov 1991</td>
+            <td>07 Jun 1988</td>
           </tr>
           <tr>
             <td>Marital Status</td>
             <td>Married</td>
           </tr>
+          <tr>
+            <td>Languages</td>
+            <td>Oriya, Hindi, English, German</td>
+          </tr>
         </table>
+        '''
+
+def personalDelaration():
+    return \
+        '''
+        <h6>DECLARATION</h6>
+        <p>I do hereby declare that the above information is true to the best of my knowledge.</p>
         '''
 
 def htmlend():
@@ -192,8 +225,8 @@ def htmlend():
             </body>
         </html>
         '''
-contact_email = "mailto:raykaliprasad@gmail.com"
-contact_name = "Kaliprasad Ray"
+contact_email = "mailto:kaushiky.das@gmail.com"
+contact_name = "Sonali Das"
 
 def mycover(manager_name, company_name):
      hiring_manager = manager_name if manager_name else "Hiring Manager"
@@ -233,6 +266,9 @@ def skeleton():
         + keyresponsibilities() \
         + experiences() \
         + educations() \
+        + certificates() \
+        + personal() \
+        + personalDelaration() \
         + htmlend()
 
 with open(html_file,'w+') as f:
