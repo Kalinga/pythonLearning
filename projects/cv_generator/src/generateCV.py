@@ -193,7 +193,8 @@ def certificates():
     certificate_link("ISTQB Foundation Certification Examination",
                      "ISTQB",
                      "21st Mar' 2017",
-                     "http://www.istqb.in/index.php/certified-tester/foundation-level", "Reg# 110964") + \
+                     "http://www.istqb.in/index.php/certified-tester/foundation-level/article/90941-kalinga-bhusan-ray",
+                     "Reg# 110964") + \
     certificate_link("Python Certification Training",
                "Edureka",
                "Dec'16-Feb'17",
@@ -322,14 +323,19 @@ def mycover(manager_name, company_name):
     str = u'''
         <body>
             <p> Dear {0},<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search for a dynamic and highly motivated Software Engineer for
-            your company. The job description is so exciting and very much closely matching my experience and ambitions.
-            With a Bachelor’s degree in Computer Science and decade long hands-on experience using programming languages
-            such as C, C++, Java, Python on Linux platform to create and implement highly sophisticated software
-            applications for embedded devices such as handheld devices and head units mounted in car dashboard;
-            I am confident that I can step in and make immediate contribution to the project and valuable contribution
-            to {1}'s continued success.</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;As a software engineer at {1}, I can collaborate closely with Customers,
+            &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search of a dynamic and highly motivated Software Engineer
+            to assist you in Research project at the University. The job description is so exciting matches my experience
+            and ambitions. With a Bachelor’s degree in Computer Science and decade long hands-on experience using
+            programming languages such as C, C++, Java, Python on Linux platform to design and implement highly
+            sophisticated software applications for embedded devices such as handheld devices and head units mounted in
+            car dashboard; I am confident that I can step in and make immediate contribution to the project and
+            valuable contribution to {1}'s continued success.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Though I don't possess much experience in the topics like Machine learning,
+            still I am confident that I am a fast leaner and have motivation towards learning
+            these aspects of the computer science and can manage these within a short period of time.</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;As a software technique assistant at {1}, I can collaborate closely with Customers,
             and help junior team members with my knowledge and experience. I enjoy being challenged and working on
             projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages
             and development techniques are important to me, and I consider myself a quick learner. In addition,
@@ -343,12 +349,18 @@ def mycover(manager_name, company_name):
                 <li>Knowledgeable of agile development, best practices, clean code approach</li>
                 <li>Hands-on software debugging experience</li>
                 <li>Proper documentation, maintainable software development, eagle eye for quality</li>
+                <li>Elementary knowledge of Machine learning and data analysis</li>
                 </ul>
              </p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<br>I got admitted as student to the University TU Ilmenau for Msc in "Research in
+            Computer and Systems Engineering" with the applicant number 104180/56732. I shall start my studies from
+            this winter semester (October, 2017) and would like to work part time on this project.</p>
 
             <p>&nbsp;&nbsp;&nbsp;&nbsp;I’ve attached a copy of my resume that details my projects and experience in
             software development. Thank you for your time and consideration. I look forward to speaking with you about
             this opportunity.</p><br>
+
             <p>Mit freundlichen Grüßen / Best regards,<br>
             Kalinga Bhusan Ray<br>
             +91 7795346374 | <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
@@ -367,13 +379,14 @@ def myAddress():
         PIN: 560030 <br>
         <hr>
     '''
-
+# Company address along with the advertised Job
 def companyAddress():
 
     return  \
         company_long_name + '''<br>''' + company_address + '''<br>''' + \
         company_zip_town + '''<br>'''  + company_state_country + '''<br>''' + \
-        '''Dt. ''' +  datetime.datetime.today().strftime('%d %b %y') + '''<hr>'''
+        '''Dt. ''' +  datetime.datetime.today().strftime('%d %b %y') + \
+        '''<br>''' + '''<h3>''' + position + '''</h3>''' + '''<hr>'''
 
 
 

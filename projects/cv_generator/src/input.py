@@ -7,14 +7,17 @@ html_file = "../gen/" + cv_name + '.html'
 pdf_file = "../gen/" + cv_name + '.pdf'
 cover = "../gen/" + 'cover.html'
 
-manager_name = ''
-company_name = ""
+manager_name = 'Professor'
+company_name = "TU Ilmenau"
 
 #Complete Address
-company_long_name = ''
-company_address = ''
-company_zip_town = ''
+company_long_name = 'Teschniche Universität Ilmenu'
+company_address = 'Dezernat für Personalangelegenheiten'
+company_zip_town = 'Postfach 10 05 65, 98684 Ilmenau'
 company_state_country = 'Germany'
+
+# Job opening
+position = 'Wissenschaftliche/r Mitarbeiter/in –   Softwaretechnik Kennziffer 51 /2017'
 
 def mailBody():
     '''
