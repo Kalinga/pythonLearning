@@ -71,7 +71,7 @@ def intro():
         <h4>SPECIALIST</h4>
         <p>Software engineer with decade long experience in IT industry, specializing in software application development
         for Car Multimedia application and handheld devices. 1.5yrs of working and living experience in Hildesheim,
-        Germany. Possess strong motivation towards learning German language and pursuing B1 at Goethe, Bangalore</p>
+        Germany. Possess strong motivation towards learning German language and completed B1 (CEFR) at Goethe, Bangalore</p>
         '''
 
 def technical():
@@ -186,10 +186,10 @@ def certificate_link(cert, institute, duration, link, id):
 def certificates():
     return \
     '''<h4>CERTIFICATION:</h4>''' + \
-    certificate_link("Prüfung Goethe-Zertifikat A2 ",
+    certificate_link("Prüfung Goethe-Zertifikat B1 ",
                      " Goethe-Instituts, Bangalore ",
-                     "19th Apr' 2017",
-                     "https://www.goethe.de/de/index.html", "PTN# 30549") + \
+                     "8th Aug' 2017",
+                     "https://www.goethe.de/de/index.html", "PTN# 32934") + \
     certificate_link("ISTQB Foundation Certification Examination",
                      "ISTQB",
                      "21st Mar' 2017",
