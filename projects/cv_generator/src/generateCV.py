@@ -50,13 +50,11 @@ def pageheading():
                 <article class="Container_article" id="personal_details">
                     <h3>Kalinga Bhusan Ray</h3>
                     <address>
-                        M: +91-7795346374<br>
+                        M: +49 15163587450<br>
                         E: <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a><br>
                         <a href=https://www.linkedin.com/in/kalinga-bhusan-ray-88505724/>LinkedIn</a>
                         <a href=https://github.com/Kalinga>GitHub</a><br>
-                        DOB: 2nd June 1983<br>
-                        Indian | Married<br>
-                        Adugodi, Bangalore, India, PIN: 560030<br>
+                        01-02-16-0 (Haus C),<br> Max-Planck-Ring 16,<br> 98693 Ilmenau, <br> Deutschland
                     </address>
                 </article>
                 <article class="Container_article" id="rightMostImage">
@@ -71,7 +69,9 @@ def intro():
         <h4>SPECIALIST</h4>
         <p>Software engineer with decade long experience in IT industry, specializing in software application development
         for Car Multimedia application and handheld devices. 1.5yrs of working and living experience in Hildesheim,
-        Germany. Possess strong motivation towards learning German language and completed B1 (CEFR) at Goethe, Bangalore</p>
+        Germany. Possess strong motivation towards learning German language and completed B1 (CEFR) at Goethe, Bangalore.
+        Currently living in Ilmenau, Germany and pursuing Masters in Research in Computer System and Engineering (RCSE)
+        in TU Ilmenau.</p>
         '''
 
 def technical():
@@ -143,7 +143,7 @@ def experiences():
     '''<h4>EXPERIENCE:</h4>''' + \
     experience("Specialist-Car Multimedia",
                "Robert Bosch Engineering and Business Solutions, Bangalore",
-               "Dec'11-Present") + \
+               "Dec'11-Sep' 17") + \
     experience("Senior Software Engineer-R&D (Adaptxt)",
                "Keypoint technology, Hyd",
                "Mar'10-Dec'11") + \
@@ -225,6 +225,9 @@ def educations():
     return \
         '''
         <h4>EDUCATION:</h4>''' + \
+        education("TU Ilmenau, Germany",
+                  "Master Research in Computer System and Engineering",
+                  "2017-Continue", "NA") + \
         education("ABIT Cuttack, Odisha",
                   "BE Computer Science and Engineering",
                   "2001-2005", "71") + \
@@ -351,7 +354,7 @@ def mycover(manager_name, company_name):
             this opportunity.</p><br>
             <p>Mit freundlichen Grüßen / Best regards,<br>
             Kalinga Bhusan Ray<br>
-            +91 7795346374 | <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
+            +49 15163587450| <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
             </p>
 
         '''.format(hiring_manager, org_name)
@@ -360,11 +363,10 @@ def mycover(manager_name, company_name):
 def myAddress():
     return  '''
         Kalinga Bhusan Ray <br>
-        #1, Kamakshi Nilaya <br>
-        1st Cross, 3rd Main Road <br>
-        Pukhraj Layout, Adugodi <br>
-        Bangalore, Karnataka, India <br>
-        PIN: 560030 <br>
+        01-02-16-0 (Haus C) <br>
+        Max-Planck-Ring 16 <br>
+        98693, Ilmenau <br>
+        Deutschland<br>
         <hr>
     '''
 

@@ -11,10 +11,11 @@ manager_name = ''
 company_name = ""
 
 #Complete Address
+
 company_long_name = ''
 company_address = ''
 company_zip_town = ''
-company_state_country = 'Germany'
+company_state_country = 'Deutschland'
 
 def mailBody():
     '''
