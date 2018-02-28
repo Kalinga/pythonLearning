@@ -163,9 +163,26 @@ if __name__ == "__main__":
     heading("Module 4 Assignment: 4")
 
     mat = reEmail("My email is mail.kalinga@gmail.com")
-    if mat:
-        print mat.group()
-        print mat.groups()
+    #if mat:
+    #    print mat.group()
+    #   print mat.groups()
+
+    str = "|          89.6|"
+    m = re.findall(r"[0-9.]+", str)[0]
+    if len(m):
+        print  m
+    else:
+        print "None"
+
+    str = "|          45|"
+    m = re.findall(r"[0-9.]+", str)[0]
+    if len(m):
+        print  m
+    else:
+        print "None"
+
+    b = 20
+    print "kalinga" if (b > 10) else "sonali"
 
     heading("Module 4 Assignment: 5")
     # Below is the program to calculate the area of a box. Check how it
@@ -224,4 +241,4 @@ if __name__ == "__main__":
 
     p1 = Point(3,4)
     p2 = Point(2,3)
-    print (p1+p2)
+   # print (p1+p2)
