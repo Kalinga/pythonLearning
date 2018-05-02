@@ -105,7 +105,7 @@ ul li {
 }
 body ul li{
     font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 p {
@@ -121,17 +121,17 @@ footer{
     padding:10px;
 }
 body footer p{
-    font-size: 10px;
+    font-size: 8px;
 }
 
 # First Paragraph
 body p{
     font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 body div article a {
-   font-size: 12px;
+   font-size: 10px;
    background-color:#CCC;
    margin : 2px;
 }

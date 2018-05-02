@@ -17,6 +17,8 @@ company_address = ''
 company_zip_town = ''
 company_state_country = 'Deutschland'
 
+DE=True
+
 def mailBody():
     '''
     Hello,
