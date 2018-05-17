@@ -83,7 +83,7 @@ def intro():
         return \
             '''
             <h4>SPEZIALIST</h4>
-            <p>Softwareentwickler mit viele jährige Erfahrungen in IT industry, spezialisierte in Software Applikation
+            <p>Softwareentwickler mit viele jährige Erfahrungen in IT Industrie, spezialisierte in Software Applikation
             Entwicklung für Car Multimedia-Anwendung und Handheld-Geräte. Gearbeitet für 1.5 Jahren bei Robert Bosch
             Car Multimedia GmbH, Hildesheim. Ich habe mich sehr motiviert zu Deutsche lernen und habe B1 (CEFR)
             bestanden in Goethe, Bangalore. Zur Zeit wohne ich in Ilmenau, Deutschland und studiere Masters in Informatik,
@@ -93,11 +93,11 @@ def intro():
         return \
             '''
             <h4>SPECIALIST</h4>
-            <p>Software engineer with decade long experience in IT Industrie, specializing in software application development
-            for Car Multimedia application and handheld devices. 1.5yrs of working and living experience in Hildesheim,
-            Germany. Possess strong motivation towards learning German language and completed B1 (CEFR) at Goethe, Bangalore.
-            Currently living in Ilmenau, Germany and pursuing Masters in Research in Computer System and Engineering (RCSE)
-            in TU Ilmenau.</p>
+            <p>Software engineer with decade long experience in IT industry, specializing in software development
+            for Car Multimedia and handheld devices. Wanted to broaden my technical area and found a new interest
+            towards Data Aanalysis and Machine Learning. Possess strong motivation towards learning German language and
+            completed B1 (CEFR) at Goethe, Bangalore. Currently living in Ilmenau, Germany and pursuing Masters in Research
+            in Computer System and Engineering (RCSE) in TU Ilmenau.</p>
             '''
 
 
@@ -167,10 +167,8 @@ def functional():
                     <ul>
                         <li>Car Multimedia Application development</li>
                         <li>Service framework development (Using DSL)</li>
-                        <li>Framework development for Interface Test Automation</li>
                         <li>Media Player and Media Gallery</li>
                         <li>Webkit based web browser</li>
-                        <li>Predictive Input method solution</li>
                     </ul>
                     <hr>
             '''
@@ -239,9 +237,12 @@ def experiences():
     else:
         return \
         '''<h4>EXPERIENCE:</h4>''' + \
+        experience("Working Student",
+                   "Actian Germany GmbH, Ilmenau",
+                   "Dec'17-Till Date") + \
         experience("Specialist-Car Multimedia",
                    "Robert Bosch Engineering and Business Solutions, Bangalore",
-                   "Dec'11-Sep' 17") + \
+                   "Dec'11-Sep'17") + \
         experience("Senior Software Engineer-R&D (Adaptxt)",
                    "Keypoint technology, Hyd",
                    "Mar'10-Dec'11") + \
@@ -348,7 +349,7 @@ def education(institution, certificate, duration, percentage):
         return \
             '''
             <div>
-                <article><h6>''' + institution + " | " + certificate + ''' with ''' + percentage + '''%''' + '''</h6>
+                <article><h6>''' + institution + " | " + certificate + '''</h6>
                 </article>
                 <article style="float:right;"> <h6>''' + duration + '''</h6>
                 </article>

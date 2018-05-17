@@ -17,3 +17,9 @@ def zeroArgs():
     print "This takes no argument\ n"
 
 zeroArgs
+
+name = "Kalinga"
+age = 32
+
+print "vars()"% vars()
+print "My name is %(name)s and my age is %(age)d" % vars()

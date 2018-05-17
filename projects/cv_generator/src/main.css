@@ -1,5 +1,5 @@
 body {
-    margin: 5px;
+    margin: 4px;
 }
 
 div {
@@ -27,7 +27,7 @@ body div article img {
     #border: 1px solid blue;
 }
 
-div article h5 {
+div article h4 {
     margin:0px;
 }
 
@@ -45,7 +45,7 @@ footer {
 table, th, td {
     border: 1px solid black;
     font-family: "Times New Roman", Times, serif;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 #Container {
@@ -68,7 +68,7 @@ table, th, td {
     width: 50%;
 }
 
-div article h6{
+div article h5{
     margin:3px;
     padding:2px;
 }
