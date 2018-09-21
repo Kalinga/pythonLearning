@@ -97,7 +97,7 @@ def intro():
             for Car Multimedia and handheld devices. Wanted to broaden my technical area and found a new interest
             towards Data Aanalysis and Machine Learning. Possess strong motivation towards learning German language and
             completed B1 (CEFR) at Goethe, Bangalore. Currently living in Ilmenau, Germany and pursuing Masters in Research
-            in Computer System and Engineering (RCSE) in TU Ilmenau.</p>
+            in Computer System and Engineering (RCSE, 3rd Semester) in TU Ilmenau.</p>
             '''
 
 
@@ -131,16 +131,14 @@ def technical():
                     <li>Object Oriented application and framework development using C, C++</li>
                     <li>Domain Specific Language (DSL) development using Core Java, Xtend/Xtext</li>
                     <li>Integration Test framework and test cases development using Python</li>
-                    <li>HMI Application development for Linux, Symbian, MeeGo devices</li>
-                    <li>GUI development using QT, QML, gtk, UIQ, S60</li>
+                    <li>HMI Application development for Linux, Symbian, MeeGo devices using QT, QML, gtk, UIQ, S60</li>
                     <li>TDD, Unit testing (JUnit, Google Test), Integration Testing</li>
                     <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
+                    <li>Sound knowledge of Android, PHP, MySQL, Data Analysis using Hadoop and Spark</li>
                     <!--li>Sound knowledge of productivity tools like puppet, vagrant</li-->
-                    <li>Designing using UML, Enterprise Architect</li>
                     <li>Sound knowledge of HTML, CSS, XML, Java Script</li>
                     <li>Git, ClearCase, Subversion,Eclipse, Carbide, CodeWarior etc..</li>
                     <li>Make, CMake, Boost Library</li>
-                    <li>Sound knowledge of Android, PHP, MySQL, Data Analysis and Machine Learning</li>
                 </ul>
                 <hr>
         '''
@@ -165,6 +163,7 @@ def functional():
             '''
             <h4>Functional Domain:</h4>
                     <ul>
+                        <li>Data analysis using Hadoop, Spark, scala and Python</li>
                         <li>Car Multimedia Application development</li>
                         <li>Service framework development (Using DSL)</li>
                         <li>Media Player and Media Gallery</li>
@@ -181,7 +180,7 @@ def keyresponsibilities():
             <ul>
                 <li>Teilnahme an der Sprint-Planung (Agile) und Überprüfen</li>
                 <li>Entwurf(mit UML) und Designprüfung</li>
-                <li>Codierung mit (C, C++, Java, Python/Linux), code-überprüfen , Komponententests und Dokumentation.</li>
+                <li>Codierung mit (C, C++, Java, Python, PHP/Linux), code-überprüfen , Komponententests und Dokumentation.</li>
                 <li>Verantwortlich für die feature Entwicklung von verschiedener Produkte.</li>
                 <li>Testplan und Testautomatisierung</li>
             </ul>
@@ -194,7 +193,7 @@ def keyresponsibilities():
             <ul>
                 <li>Participation in the Sprint Planning (Agile) and Review</li>
                 <li>Design (using UML) and Design review</li>
-                <li>Coding(C, C++, Java, Python/Linux), code review, unit testing and documentation.</li>
+                <li>Coding(C, C++, Java, Python, PHP/Linux), code review, unit testing and documentation.</li>
                 <li>Responsible for feature development of various product.</li>
                 <li>Test Plan and Test Automation</li>
             </ul>
@@ -379,7 +378,7 @@ def educations():
             '''
             <h4>EDUCATION:</h4>''' + \
             education("TU Ilmenau, Germany",
-                      "2nd Sem, Master Research in Computer System and Engineering",
+                      "3rd Sem, Master Research in Computer System and Engineering",
                       "2017-Continue", "NA") + \
             education("ABIT Cuttack, Odisha",
                       "BE Computer Science and Engineering",
@@ -418,17 +417,20 @@ def projects():
             <h4>PROJECTS:</h4>
             <h5>Recent Projects</h5>
             <ul>
+                <li>Solving DataLake problem using VectorH (Actian product on Hadoop)</li >
+                <li>Analysis of GDELT data using Apache Spark </li>
+                <li>TF-IDF analysis of wikipedia data (given stop word data) and clustering</li>
+                <li>Analysis of Geo-spatial data using GDELT and OpenStreetMap.org dataset using STARK framework</li>
                 <li>Next generation service framework development (using Xtext and Xtend DSL development)</li >
                 <li>Test Automation framework development using python,xsd, JSON etc..</li >
                 <li>Java plug-in development:
                     C++ code generation for service specific Stub and Proxy component (Code generation for DBus introspection xml)
                     Automatic generation of C++ adapter felicitating Interface test of the services running in the target</li>
-                <li>QT/QML based HMI and application development:
-                     HMI application displaying Navigation data, GPS data and CAN data
-                     Home screen development for Infotainment Head Unit</li>
+
              </ul>
              <h5>Old Projects</h5>
              <ul>
+                <li>QT/QML based HMI and application development</li>
                 <li>Webkit based browser UI and view development using gtk+</li>
                 <li>Media Player and Media Gallery application development using S60 and UIQ symbian-UI framework</li >
             </ul>
@@ -532,19 +534,19 @@ def mycover(manager_name, company_name):
         <body>
             <p> Dear {0},<br>
             &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search for a dynamic and highly motivated Software Engineer for
-            your company. The job description is so exciting and very much closely matching my experience and ambitions.
-            With a Bachelor’s degree in Computer Science and decade long hands-on experience using programming languages
-            such as C, C++, Java, Python on Linux platform to create and implement highly sophisticated software
-            applications for embedded devices such as handheld devices and head units mounted in car dashboard;
-            I am confident that I can step in and make immediate contribution to the project and valuable contribution
-            to {1}'s continued success.</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;As a software engineer at {1}, I can collaborate closely with Customers,
-            and help junior team members with my knowledge and experience. I enjoy being challenged and working on
-            projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages
-            and development techniques are important to me, and I consider myself a quick learner. In addition,
-            I consider myself a flexible, always wanted to take responsibility, take ownership of core components.</p>
+            your company to work in Data Science domain . The job description is so exciting and very much closely
+            matches to my area of interest. With a Bachelor’s degree in Computer Science and decade long hands-on
+            experience using programming languages such as C, C++, Java, Python on Linux platform to create and
+            implement highly sophisticated software applications for embedded devices such as handheld devices
+            and head units mounted in car dashboard; i found a new interest in the area of data analysis and wish
+            to broaden my area expertise. Currently i am pursuing "Research in Computer & Systems Engineering (RCSE)";
+            a Masters programme at TU, Ilmenau, Germany. I am confident that I can step in and make immediate contribution to
+            the project and valuable contribution to {1}'s continued success and hone my skill as well.<p>&nbsp;&nbsp;&nbsp;&nbsp; I enjoy being challenged and working on projects that require me to work outside my comfort
+            and knowledge set, as continuing to learn new languages and development techniques are important to me,
+            and I consider myself a quick learner. In addition,I consider myself a flexible, always wanted to take
+            responsibility, take ownership of core components.</p>
 
-            <p>Few of my skills that I would like to highlight here, that enable me to contribute to the success of the company
+            <p>Few of my skills that I would like to highlight here, that enable me to contribute to the success of the project
             <ul>
                 <li>Complete understanding of SDLC (Software development life cycle)</li>
                 <li>Highly skilled in designing, testing, and developing software for resource constraint systems</li>
