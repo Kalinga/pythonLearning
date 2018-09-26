@@ -1,6 +1,6 @@
 # Keeping my Curriculum Vitae is one of the most difficult task for me.
 1. I don't like MS word to be used for my CV
-2. PDF is the best alternative to have the CV conents in it
+2. PDF is the best alternative to have the CV contents in it
 3. Converting MS word file each time i modify the contents using a free tool in the internet
     is something i hate most.
 4. I love using Linux/Ubuntu systems. And MS word does not work seamlessly on Ubuntu
