@@ -28,7 +28,7 @@ body div article img {
 }
 
 div article h4 {
-    margin:0px;
+    margin:4px;
 }
 
 address {
@@ -74,15 +74,15 @@ div article h5{
 }
 
 h6 {
-    margin : 2px;
+    margin : 5px;
 }
 
 h5 {
-    margin : 2px;
+    margin : 4px;
 }
 
 h4 {
-    margin : 0px;
+    margin : 6px;
     padding:1px;
 }
 
@@ -109,7 +109,7 @@ body ul li{
 }
 
 p {
-    margin:1px;
+    margin:2px;
 }
 
 table {
