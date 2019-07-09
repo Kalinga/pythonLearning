@@ -101,10 +101,9 @@ def intro():
             '''
             <h4>Experienced Software Engineer</h4>
             <p>Software engineer with decade long experience in IT industry, specializing in application software 
-            development on Linux. For past couple of years more focused towards various aspects of Data, such as 
-            Data collection, cleansing, ETL and Data Aanalysis and Machine Learning and have ambition towards 
-            knowing and taking complete responsiblity such as Fullstack developer. In past i have lived and worked 
-            for Robert Bosch Car Multimedia GmbH, Hildesheim and would like to work some more years in Germany.
+            development on Linux. For past couple of years more focused towards Data Aanalysis, Machine Learning and specifically
+            computer vision related task using ML and have ambition towards knowing and taking complete responsiblity 
+            of a module or product. In past i have lived and worked for Robert Bosch Car Multimedia GmbH, Hildesheim and would like to work some more years in Germany.
             Possess strong motivation towards learning German language and currently learning B2 and living in 
             Ilmenau, Germany and pursuing Masters in Research  in Computer System and Engineering (RCSE, 4th Semester) in TU Ilmenau.</p>
             '''
@@ -138,7 +137,8 @@ def technical():
             <h4>Technical Domain:</h4>
                 <ul>
                     <Data collection and ETL using python and Vector/Ingres>
-                    <Data analysis using python and Visualization using Microsoft Power BI>
+                    <li>Image processing using Deep Neural Network</li>
+                    <li>Data analysis using python, Microsoft Power BI, Vector/Ingres as database </li>
                     <Unit Test development using Python for Vector database engine>
                     <Setting up various Database Benchmarking for Actian Vector pproduct>
                     <Writing queries using SQL and Actian/x100  >
@@ -176,6 +176,7 @@ def functional():
             '''
             <h4>Functional Domain:</h4>
                     <ul>
+                        <li>Object identification and segmentation using Keras, Tensorflow, OpenCV</li>
                         <li>Data collection, cleansing and ETL using SQL, python, Actian Vector </li>
                         <li>Data analysis using Hadoop, Spark, scala and Python</li>
                         <Data Visualization and analysis using Microsoft Power BI>
@@ -539,23 +540,25 @@ with open(html_file,'w+') as f:
 
     f.write(message)
 
-def mycover(manager_name, company_name):
+def mycover(manager_name, company_name, role):
     hiring_manager = manager_name if manager_name else "Hiring Manager"
     org_name = company_name if company_name else "Organisation"
+    role = role if role  else "Software Engineer"
     str = u'''
         <body>
             <p> Dear {0},<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search for a dynamic and highly motivated Software Engineer for
-            your company. With a Bachelor’s degree in Computer Science and decade long hands-on
+            &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search for a dynamic and highly motivated {2} for
+            your Department. With a Bachelor’s degree in Computer Science and decade long hands-on
             experience using programming languages such as C, C++, Java, Python on Linux platform to create and
             implement highly sophisticated software applications for embedded devices such as handheld devices
-            and head units mounted in car dashboard; i found a new interest in the area of web, data analytics, 
-            machine learning and wish to broaden my area of expertise.
+            and head units mounted in car dashboard; i found a new interest in the area of  
+            data analytics, machine learning, computer vision and wish to broaden my area of expertise.
             Currently i am pursuing "Research in Computer & Systems Engineering (RCSE)";
-            a Masters programme at TU, Ilmenau, Germany. I am confident that I can step in and make immediate contribution to
+            a Masters programme at TU, Ilmenau, Germany. I just started my Master-Thesis and working on topic "Pedestrian trajectory prediction using Deep Neural Network".
+            I am confident that I can step in and make immediate contribution to
             the project and valuable contribution to {1}'s continued success and hone my skill as well.<p>&nbsp;&nbsp;&nbsp;&nbsp; I enjoy being challenged and working on projects that require me to work outside my comfort
             and knowledge set, as continuing to learn new languages and development techniques are important to me,
-            and I consider myself a quick learner. In addition,I consider myself a flexible, always wanted to take
+            andplo I consider myself a quick learner. In addition,I consider myself a flexible, always wanted to take
             responsibility, take ownership of core components.</p>
 
             <p>Few of my skills that I would like to highlight here, that enable me to contribute to the success of the project
@@ -577,7 +580,7 @@ def mycover(manager_name, company_name):
             +49 15163587450| <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
             </p>
 
-        '''.format(hiring_manager, org_name)
+        '''.format(hiring_manager, org_name, role )
     return str
 
 def myAddress():
@@ -596,14 +599,12 @@ def companyAddress():
         company_zip_town + '''<br>'''  + company_state_country + '''<br>''' + \
         '''Dt. ''' +  datetime.datetime.today().strftime('%d %b %y') + '''<hr>'''
 
-
-
 def cover_page():
     return \
         htmlstart(contact_name) + \
         myAddress() + \
         companyAddress() +\
-        mycover(manager_name, company_name) + \
+        mycover(manager_name, company_name, role) + \
         htmlend()
 
 
@@ -611,4 +612,5 @@ with open(cover,'w+') as f:
     message = cover_page()
     f.write(message)
 
+#pdfkit.from_file(html_file, pdf_file)
 pdfkit.from_file(html_file, pdf_file, cover=cover, cover_first=True)
