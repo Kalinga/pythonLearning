@@ -176,6 +176,7 @@ def functional():
             '''
             <h4>Functional Domain:</h4>
                     <ul>
+                        <li>Object identification and segmentation using Keras, Tensorflow, OpenCV</li>
                         <li>Data collection, cleansing and ETL using SQL, python, Actian Vector </li>
                         <li>Data analysis using Hadoop, Spark, scala and Python</li>
                         <Data Visualization and analysis using Microsoft Power BI>
@@ -365,6 +366,16 @@ def education(institution, certificate, duration, percentage):
             <!--hr-->
             '''
 
+def masterthesis():
+    return \
+        '''
+        <h4>MASTER THESIS TOPIC:</h4> \
+        Pedestrian trajectory prediction using Deep Neural Network:
+        Thorough understanding of image processing with Convolutional Neural Network.
+        Training, validating and testing deep neural network based model with keras-python.
+        Large image database acquisition and processing and pipelining task.
+        '''
+
 def educations():
     if (DE):
         return \
@@ -386,6 +397,9 @@ def educations():
         return \
             '''
             <h4>EDUCATION:</h4>''' + \
+            education("Pedestrian trajectory prediction using Deep Neural Network",
+                      "Master Thesis Topic",
+                      "", "") + \
             education("TU Ilmenau, Germany",
                       "4th Sem, Master Research in Computer System and Engineering",
                       "2017-Continue", "NA") + \
@@ -525,6 +539,7 @@ def skeleton():
         + technical() \
         + functional() \
         + keyresponsibilities() \
+        + masterthesis() \
         + experiences() \
         + projects() \
         + certificates() \
@@ -549,8 +564,8 @@ def mycover(manager_name, company_name):
             your company. With a Bachelor’s degree in Computer Science and decade long hands-on
             experience using programming languages such as C, C++, Java, Python on Linux platform to create and
             implement highly sophisticated software applications for embedded devices such as handheld devices
-            and head units mounted in car dashboard; i found a new interest in the area of web, data analytics, 
-            machine learning and wish to broaden my area of expertise.
+            and head units mounted in car dashboard; i found a new interest in the area of data analytics, 
+            machine learning, computer vision and wish to broaden my area of expertise.
             Currently i am pursuing "Research in Computer & Systems Engineering (RCSE)";
             a Masters programme at TU, Ilmenau, Germany. I am confident that I can step in and make immediate contribution to
             the project and valuable contribution to {1}'s continued success and hone my skill as well.<p>&nbsp;&nbsp;&nbsp;&nbsp; I enjoy being challenged and working on projects that require me to work outside my comfort
@@ -595,7 +610,6 @@ def companyAddress():
         company_long_name + '''<br>''' + company_address + '''<br>''' + \
         company_zip_town + '''<br>'''  + company_state_country + '''<br>''' + \
         '''Dt. ''' +  datetime.datetime.today().strftime('%d %b %y') + '''<hr>'''
-
 
 
 def cover_page():
