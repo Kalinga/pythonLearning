@@ -3,13 +3,13 @@ cv_name = 'KALINGA_RAY_2019'
 contact_email = "mailto:mail.kalinga@gmail.com"
 contact_name = "Kalinga Bhusan Ray"
 
+role="C++ Developer "
 
 manager_name = ''
-company_name = ""
-
+company_name = "xxx"
 #Complete Address
-company_long_name = ''
-company_address = ''
+company_long_name = 'xxx xx'
+company_address = 'xxx'
 company_zip_town = ''
 company_state_country = 'Deutschland'
 
@@ -30,4 +30,3 @@ def mailBody():
     Best Regards,
     Kalinga
     '''
-

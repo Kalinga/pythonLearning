@@ -100,15 +100,15 @@ def intro():
         return \
             '''
             <h4>Experienced Software Engineer</h4>
-            <p>Software engineer with decade long experience in IT industry, specializing in application software 
-            development on Linux. For past couple of years more focused towards various aspects of Data, such as 
-            Data collection, cleansing, ETL and Data Aanalysis and Machine Learning and have ambition towards 
-            knowing and taking complete responsiblity such as Fullstack developer. In past i have lived and worked 
-            for Robert Bosch Car Multimedia GmbH, Hildesheim and would like to work some more years in Germany.
-            Possess strong motivation towards learning German language and currently learning B2 and living in 
-            Ilmenau, Germany and pursuing Masters in Research  in Computer System and Engineering (RCSE, 4th Semester) in TU Ilmenau.</p>
+            <p>Result-oriented professional with more than decade long experience in software development, 
+            Technical Architecture and customer consultation. Developing software solution, establishing Data Pipeline,
+            Data Analysis, Deep Learning based Computer Vision task are some of my core technical competencies. 
+            Possess strong motivation towards learning German language and have completed B2. Currently 
+            pursuing Masters in Research in Computer System and Engineering (RCSE, 4th Semester) in TU Ilmenau.
+            In past i have worked for Robert Bosch Car Multimedia GmbH, Hildesheim and looking forward to work 
+            some more years in Germany.
+             </p>
             '''
-
 
 def technical():
     if(DE):
@@ -137,21 +137,22 @@ def technical():
         '''
             <h4>Technical Domain:</h4>
                 <ul>
-                    <Data collection and ETL using python and Vector/Ingres>
-                    <Data analysis using python and Visualization using Microsoft Power BI>
-                    <Unit Test development using Python for Vector database engine>
-                    <Setting up various Database Benchmarking for Actian Vector pproduct>
-                    <Writing queries using SQL and Actian/x100  >
+                    <li>Hadoop Ecosystem and tools: Ambari, Zookeepeer, HDFS, MR, Kafka, Spark and Spark-streaming</li>
+                    <li>Machine Learning, Deep Learning, LSTM</li>
+                    <li>Data collection and ETL using python and Vector/Ingres</li>
+                    <li>Data analysis using python Trend analysis of Actian product performanceand Visualization using Microsoft Power BI</li>
+                    <li>Unit Test development using Python for Vector database engine</li>
+                    <li>Setting up various Database Benchmarking for Actian Vector product</li>
+                    <li>Writing queries using SQL and Actian/x100 </li>
                     <li>Object Oriented application and framework development using C, C++</li>
                     <li>Domain Specific Language (DSL) development using Core Java, Xtend/Xtext</li>
                     <li>Integration Test framework and test cases development using Python</li>
                     <li>HMI Application development for Linux, Symbian, MeeGo devices using QT, QML, gtk, UIQ, S60</li>
                     <li>TDD, Unit testing (JUnit, Google Test), Integration Testing</li>
-                    <li>Agile methodologies, Scrum, Planning & Estimation, CI(Jenkins)</li>
-                    <!--li>Sound knowledge of productivity tools like puppet, vagrant</li-->
+                    <li>Agile methodologies, Scrum, Planning & Estimation, CI(Git/Jenkins)</li>
+                    <li>vagrant, docker, puppet</li>
                     <li>Sound knowledge of Android, PHP,HTML, CSS, XML, Java Script</li>
-                    <li>Git, ClearCase, Subversion,Eclipse, Carbide, CodeWarior etc..</li>
-                    <li>Make, CMake, Boost Library</li>
+                    <!--Make, CMake, Boost Library</li>
                 </ul>
                 <hr>
         '''
@@ -176,6 +177,7 @@ def functional():
             '''
             <h4>Functional Domain:</h4>
                     <ul>
+                        <li>Lambda architecture based IoT data processing</li>
                         <li>Object identification and segmentation using Keras, Tensorflow, OpenCV</li>
                         <li>Data collection, cleansing and ETL using SQL, python, Actian Vector </li>
                         <li>Data analysis using Hadoop, Spark, scala and Python</li>
@@ -252,6 +254,9 @@ def experiences():
     else:
         return \
         '''<h4>EXPERIENCE:</h4>''' + \
+        experience("Working Student",
+                   "Incowia GmbH, Ilmenau",
+                   "July'19-Till date") + \
         experience("Working Student and Internship",
                    "Actian Germany GmbH, Ilmenau",
                    "Dec'17-Mar'19") + \
@@ -301,10 +306,6 @@ def certificates():
     if (DE):
         return \
             '''<h4>ZERTIFIZIERUNG:</h4>''' + \
-            certificate_link("Prüfung Goethe-Zertifikat B1 ",
-                             " Goethe-Instituts, Bangalore ",
-                             "8th Aug' 2017",
-                             "https://www.goethe.de/de/index.html", "PTN# 32934") + \
             certificate_link("ISTQB Foundation Zertifizierungsprüfung",
                              "ISTQB",
                              "21st Mär' 2017",
@@ -315,18 +316,11 @@ def certificates():
                              "https://www.edureka.co/my-certificate/0d74fa2c1a12a33be340ad3c0c6ec264", "AYMLVT4A") + \
             certificate("Symbian OS Essentials & Symbian C++",
                         "Cranes Varsity, Cranes Software International Limited",
-                        "Jan'07-Mai'07") + \
-            certificate("Design eingebetteter Systeme",
-                        "Kiona software, Bangalore",
-                        "Dez'05-Apr'06")
+                        "Jan'07-Mai'07")
 
     else:
         return \
         '''<h4>CERTIFICATION:</h4>''' + \
-        certificate_link("Prüfung Goethe-Zertifikat B1 ",
-                         " Goethe-Instituts, Bangalore ",
-                         "8th Aug' 2017",
-                         "https://www.goethe.de/de/index.html", "PTN# 32934") + \
         certificate_link("ISTQB Foundation Certification Examination",
                          "ISTQB",
                          "21st Mar' 2017",
@@ -337,10 +331,7 @@ def certificates():
                    "https://www.edureka.co/my-certificate/0d74fa2c1a12a33be340ad3c0c6ec264", "AYMLVT4A") + \
         certificate("Symbian OS Essentials &  Symbian C++",
                   "Cranes Varsity, Cranes Software International Limited",
-                  "Jan'07-May'07") + \
-        certificate("Embedded Systems Design",
-                   "Kiona software, Bangalore",
-                   "Dec'05-Apr'06")
+                  "Jan'07-May'07")
 
 
 def education(institution, certificate, duration, percentage):
@@ -371,9 +362,9 @@ def masterthesis():
         '''
         <h4>MASTER THESIS TOPIC:</h4> \
         Pedestrian trajectory prediction using Deep Neural Network:
-        Thorough understanding of image processing with Convolutional Neural Network.
+        Thorough understanding of image classification, object detection with deep Convolutional Neural Network.
         Training, validating and testing deep neural network based model with keras-python.
-        Large image database acquisition and processing and pipelining task.
+        Working with large image data set (Caltech, JAAD) acquisition and processing and pipelining task.
         '''
 
 def educations():
@@ -440,6 +431,7 @@ def projects():
             <h4>PROJECTS:</h4>
             <h5>Recent Projects</h5>
             <ul>
+                <li>Setup IoT pipeline based on Lambda Architecture using Kafka, spark streaming and related technologies</li>
                 <li>Trend analysis of Actian product performance with different Benchmarking suite</li>
                 <li>Introduction of 'filtebystats' operator to pipefabric: a stream engine at TU Ilmenau</li>
                 <li>Solving DataLake problem using VectorH (Actian product on Hadoop)</li >
@@ -455,7 +447,7 @@ def projects():
                 <li>Test Automation framework development using python,xsd, JSON etc..</li >
                 <li>Java plug-in development:
                     C++ code generation for service specific Stub and Proxy component (Code generation for DBus introspection xml)
-                    Automatic generation of C++ adapter felicitating Interface test of the services running in the target</li>
+                    Automatic generation of C++ adapter facilitating Interface test of the services running in the target</li>
                 <li>QT/QML based HMI and application development</li>
                 <li>Webkit based browser UI and view development using gtk+</li>
                 <li>Media Player and Media Gallery application development using S60 and UIQ symbian-UI framework</li >
@@ -536,8 +528,8 @@ def skeleton():
         htmlstart(contact_name) \
         + pageheading() \
         + intro() \
+        + functional()  \
         + technical() \
-        + functional() \
         + keyresponsibilities() \
         + masterthesis() \
         + experiences() \
@@ -560,18 +552,17 @@ def mycover(manager_name, company_name):
     str = u'''
         <body>
             <p> Dear {0},<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search for a dynamic and highly motivated Software Engineer for
-            your company. With a Bachelor’s degree in Computer Science and decade long hands-on
-            experience using programming languages such as C, C++, Java, Python on Linux platform to create and
-            implement highly sophisticated software applications for embedded devices such as handheld devices
-            and head units mounted in car dashboard; i found a new interest in the area of data analytics, 
-            machine learning, computer vision and wish to broaden my area of expertise.
-            Currently i am pursuing "Research in Computer & Systems Engineering (RCSE)";
-            a Masters programme at TU, Ilmenau, Germany. I am confident that I can step in and make immediate contribution to
-            the project and valuable contribution to {1}'s continued success and hone my skill as well.<p>&nbsp;&nbsp;&nbsp;&nbsp; I enjoy being challenged and working on projects that require me to work outside my comfort
-            and knowledge set, as continuing to learn new languages and development techniques are important to me,
-            and I consider myself a quick learner. In addition,I consider myself a flexible, always wanted to take
-            responsibility, take ownership of core components.</p>
+            &nbsp;&nbsp;&nbsp;&nbsp;I found you are in search for a dynamic and highly motivated {2} for
+            your company. I possess decade long hands-on experience using programming languages such as C, C++, Java, 
+            Python on Linux platform to create and implement highly sophisticated software applications, tools, 
+            data analytics solution, DeepLearning based image processing and IoT solution.
+            Soon i shall be completing "Research in Computer & Systems Engineering (RCSE)", 
+            a Masters programme at Technical University, Ilmenau, Germany. I am confident that I can step in and make 
+            immediate contribution to the project and valuable contribution to {1}'s continued success and hone my skill 
+            as well.<p>&nbsp;&nbsp;&nbsp;&nbsp; I enjoy being challenged and working on projects that require me to work 
+            outside my comfort and knowledge set, as continuing to learn new languages and development techniques are 
+            important to me, and I consider myself a quick learner. In addition,I consider myself a flexible, 
+            always wanted to take responsibility, take ownership of core components.</p>
 
             <p>Few of my skills that I would like to highlight here, that enable me to contribute to the success of the project
             <ul>
@@ -592,7 +583,7 @@ def mycover(manager_name, company_name):
             +49 15163587450| <a href="mailto:mail.kalinga@gmail.com">mail.kalinga@gmail.com</a>
             </p>
 
-        '''.format(hiring_manager, org_name)
+        '''.format(hiring_manager, org_name, role)
     return str
 
 def myAddress():
