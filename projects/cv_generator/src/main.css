@@ -45,7 +45,7 @@ footer {
 table, th, td {
     border: 1px solid black;
     font-family: "Times New Roman", Times, serif;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 #Container {
@@ -82,8 +82,8 @@ h5 {
 }
 
 h4 {
-    margin : 6px;
-    padding:1px;
+    margin : 0px;
+    padding: 4px;
 }
 
 body div article h3 {
@@ -97,7 +97,7 @@ address {
 }
 
 ul{
-    margin:1px;
+    margin:2px;
 }
 
 ul li {
@@ -105,7 +105,7 @@ ul li {
 }
 body ul li{
     font-family: "Times New Roman", Times, serif;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 p {
@@ -127,23 +127,23 @@ body footer p{
 # First Paragraph
 body p{
     font-family: "Times New Roman", Times, serif;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 body div article a {
-   font-size: 10px;
+   font-size: 14px;
    background-color:#CCC;
    margin : 2px;
 }
 
 span {
     font-family: "Times New Roman", Times, serif;
-    font-size: 12px;
+    font-size: 16px;
     color:green;
 }
 
 #certificate {
-    width: 33%;
+    width: 44%;
     background-color:#FFF;
     font-weight: bold;
 }

@@ -102,10 +102,11 @@ def intro():
             <h4>Experienced Software Engineer</h4>
             <p>Result-oriented professional with more than decade long experience in software development, 
             Technical Architecture and customer consultation. Developing software solution, establishing Data Pipeline,
-            Data Analysis, Deep Learning based Computer Vision task are some of my core technical competencies. 
-            Possess strong motivation towards learning German language and have completed B2. Currently 
-            pursuing Masters in Research in Computer System and Engineering (RCSE, 4th Semester) in TU Ilmenau.
-            In past i have worked for Robert Bosch Car Multimedia GmbH, Hildesheim and looking forward to work 
+            Data Analysis, Agile Software development, DevOps, Deep Learning based Computer Vision task are some of my core technical competencies. 
+            Possess strong motivation towards learning German language and have completed B2. After finishing my 
+            Masters in Research in Computer System and Engineering (RCSE) from TU Ilmenau, currently I am  looking for 
+            a challenging role to restart my full time career.
+            In the past, I have worked for Robert Bosch Car Multimedia GmbH, Hildesheim and looking forward to work 
             some more years in Germany.
              </p>
             '''
@@ -137,10 +138,10 @@ def technical():
         '''
             <h4>Technical Domain:</h4>
                 <ul>
-                    <li>Hadoop Ecosystem and tools: Ambari, Zookeepeer, HDFS, MR, Kafka, Spark and Spark-streaming</li>
+                    <li>Hadoop Ecosystem and tools: Ambari, Zookeepeer, HDFS, MR, Kafka, Spark and Spark-streaming, MongoDB etc.</li>
                     <li>Machine Learning, Deep Learning, LSTM</li>
                     <li>Data collection and ETL using python and Vector/Ingres</li>
-                    <li>Data analysis using python Trend analysis of Actian product performanceand Visualization using Microsoft Power BI</li>
+                    <li>Data analysis using python, Trend analysis of Actian product performance, Visualization using Microsoft Power BI</li>
                     <li>Unit Test development using Python for Vector database engine</li>
                     <li>Setting up various Database Benchmarking for Actian Vector product</li>
                     <li>Writing queries using SQL and Actian/x100 </li>
@@ -152,7 +153,7 @@ def technical():
                     <li>Agile methodologies, Scrum, Planning & Estimation, CI(Git/Jenkins)</li>
                     <li>vagrant, docker, puppet</li>
                     <li>Sound knowledge of Android, PHP,HTML, CSS, XML, Java Script</li>
-                    <!--Make, CMake, Boost Library</li>
+                    <!--Make, CMake, Boost Library</li-->
                 </ul>
                 <hr>
         '''
@@ -370,11 +371,10 @@ def masterthesis():
 def educations():
     if (DE):
         return \
-            '''
-            <h4>AUSBILDUNG:</h4>''' + \
+            '''<h4>AUSBILDUNG:</h4>''' + \
             education("TU Ilmenau, Deutschland",
                       "4th Sem, Master Informatik(RCSE)",
-                      "2017-Continue", "NA") + \
+                      "2017-2019", "1.5") + \
             education("ABIT Cuttack, Odisha",
                       "Bachelor in Informatik",
                       "2001-2005", "71") + \
@@ -385,23 +385,23 @@ def educations():
                       "Abitur ",
                       "1997-1998", "78")
     else:
+        # education("Pedestrian trajectory prediction using Deep Neural Network",
+        #          "Master Thesis Topic",
+        #          "", "") + \
         return \
             '''
             <h4>EDUCATION:</h4>''' + \
-            education("Pedestrian trajectory prediction using Deep Neural Network",
-                      "Master Thesis Topic",
-                      "", "") + \
             education("TU Ilmenau, Germany",
-                      "4th Sem, Master Research in Computer System and Engineering",
-                      "2017-Continue", "NA") + \
+                      "Master Research in Computer System and Engineering",
+                      "2017-2019", "1.5") + \
             education("ABIT Cuttack, Odisha",
-                      "BE Computer Science and Engineering",
+                      "BE Computer Science and Engineering (Bachelor)",
                       "2001-2005", "71") + \
             education("Council of Higher Secondary Education, Orissa",
-                      "Higher Secondary Examination Certificate",
+                      "Higher Secondary Examination Certificate (Abitur)",
                       "1998-2000", "65") + \
             education("Board of secondary Education, Orissa",
-                      "High school Certificate Examination ",
+                      "High school Certificate Examination (Klasse 10)",
                       "1997-1998", "78")
 def projects():
     if (DE):
@@ -431,7 +431,7 @@ def projects():
             <h4>PROJECTS:</h4>
             <h5>Recent Projects</h5>
             <ul>
-                <li>Setup IoT pipeline based on Lambda Architecture using Kafka, spark streaming and related technologies</li>
+                <li>Setup of IoT pipeline based on Lambda Architecture using Kafka, spark streaming and related technologies</li>
                 <li>Trend analysis of Actian product performance with different Benchmarking suite</li>
                 <li>Introduction of 'filtebystats' operator to pipefabric: a stream engine at TU Ilmenau</li>
                 <li>Solving DataLake problem using VectorH (Actian product on Hadoop)</li >
@@ -531,10 +531,10 @@ def skeleton():
         + functional()  \
         + technical() \
         + keyresponsibilities() \
-        + masterthesis() \
         + experiences() \
         + projects() \
         + certificates() \
+        + masterthesis() \
         + educations() \
         + personalDelaration() \
         + footer(contact_email, contact_name,
@@ -556,13 +556,12 @@ def mycover(manager_name, company_name):
             your company. I possess decade long hands-on experience using programming languages such as C, C++, Java, 
             Python on Linux platform to create and implement highly sophisticated software applications, tools, 
             data analytics solution, DeepLearning based image processing and IoT solution.
-            Soon i shall be completing "Research in Computer & Systems Engineering (RCSE)", 
-            a Masters programme at Technical University, Ilmenau, Germany. I am confident that I can step in and make 
-            immediate contribution to the project and valuable contribution to {1}'s continued success and hone my skill 
+            I just completed "Research in Computer & Systems Engineering (RCSE)", 
+            a Masters programme at Technical University, Ilmenau, Germany. Now i would like to go back to corporate world.
+             I am confident that I can step in and make immediate contribution to the project and valuable contribution to {1}'s continued success and hone my skill 
             as well.<p>&nbsp;&nbsp;&nbsp;&nbsp; I enjoy being challenged and working on projects that require me to work 
             outside my comfort and knowledge set, as continuing to learn new languages and development techniques are 
-            important to me, and I consider myself a quick learner. In addition,I consider myself a flexible, 
-            always wanted to take responsibility, take ownership of core components.</p>
+            important to me. I consider myself a quick learner and flexible, always want to take responsibility, take ownership of core components and work on multiple projects.</p>
 
             <p>Few of my skills that I would like to highlight here, that enable me to contribute to the success of the project
             <ul>
@@ -616,4 +615,8 @@ with open(cover,'w+') as f:
     message = cover_page()
     f.write(message)
 
-pdfkit.from_file(html_file, pdf_file, cover=cover, cover_first=True)
+print(pdf_file)
+if hascover:
+    pdfkit.from_file(html_file, pdf_file, cover=cover, cover_first=True)
+else:
+    pdfkit.from_file(html_file, pdf_file)
