@@ -310,7 +310,7 @@ def certificates():
             certificate_link("ISTQB Foundation Zertifizierungsprüfung",
                              "ISTQB",
                              "21st Mär' 2017",
-                             "http://www.istqb.in/index.php/certified-tester/foundation-level", "Reg# 110964") + \
+                             "https://www.istqb.in/istqb-foundation/foundationnew", "Reg# 110964") + \
             certificate_link("Python Zertifizierungstraining",
                              "Edureka",
                              "Dez'16-Feb'17",

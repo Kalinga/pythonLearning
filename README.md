@@ -1,5 +1,5 @@
 # pythonLearning
 
-*  Most updated, _auto-generated_ [CV](https://github.com/Kalinga/pythonLearning/blob/master/projects/cv_generator/cv/KALINGA_RAY_2017.pdf)
+*  Most updated, _auto-generated_ [CV](https://github.com/Kalinga/pythonLearning/blob/master/projects/cv_generator/cv/KALINGA_RAY_2019.pdf)
 *  [Sentiment analysis](https://github.com/Kalinga/pythonLearning/tree/master/projects/twitter_sentiment) from twitter feeds for imdb celebrities
       + Sample [output](https://github.com/Kalinga/pythonLearning/tree/master/projects/twitter_sentiment/gen) of the project  
